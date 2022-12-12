@@ -1,5 +1,6 @@
 # Drops_Of_Jupyter
 
+
 ### Topic
 
 - An analysis of the diabetic population and the future impact of living longer 
@@ -28,16 +29,24 @@
     
     - This will amplify for those in lower socioeconomic communities who studies show are disproportionately affected by diabetes in comparison to those communities of higher education and economic status. 
 
+
 ### Objective
 
 This analysis aims to determine how diabetes data continue to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
-    
+ 
+ 
 ### Description of the data source
 
 - 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)
     - link: https://www.cdc.gov/nchs/nhis/2021nhis.htm
 
-- Category: Sample adult interview
+- Table: Sample adult interview
+    - Demographics
+    - Health status: diabetes
+    - Insurance
+    - Income
 
 
 ### Questions to address with this study
+- What demographic factors are correlated with diabetes?
+- Based on these factors, who will likely get diabetes? 
