@@ -47,7 +47,13 @@ This analysis aims to determine how diabetes data continue to trend in America. 
     - Insurance
     - Income
 
+- adult-summary.pdf
+    - This PDF contains the entries/data that we used for this analysis.
+
+- adult-codebook.pdf
+    - This PDF contains the key's for the variables in the adult-summary.pdf.
+
 
 ### Questions to address with this study
 - What demographic factors are correlated with diabetes?
-- Based on these factors, who will likely get diabetes? 
+- Based on these factors, who will likely get diabetes?
