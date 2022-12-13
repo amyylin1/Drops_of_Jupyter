@@ -62,7 +62,7 @@ Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used
 ### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use, and we will integrate Tableau to display the data.
 
-!(ERD)[https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/2882436c21667f04db81851cd92d9667ff948aca/images/QuickDBD-export.png]
+![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/2882436c21667f04db81851cd92d9667ff948aca/images/QuickDBD-export.png)
 
 ### Machine Learning
 Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
