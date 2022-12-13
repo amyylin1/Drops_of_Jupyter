@@ -51,17 +51,16 @@ This analysis aims to determine how diabetes data continue to trend in America. 
 ### Questions to address with this study
 - What demographic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
-# Drops_Of_Jupyter
-GitHub Repo for the Final project
-# Technologies Used
-## Data Cleaning and Analysis
+
+### Technologies Used
+### Data Cleaning and Analysis
 Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used to clean the data and export to SQL. Pandas and SQL will be used to perform an exploratory analysis. Further analysis will be completed using Machine Learning and Tableau. 
 
-## Database Storage
+### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use, and we will integrate Tableau to display the data.
 
-## Machine Learning
+### Machine Learning
 Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
 
-## Dashboard
+### Dashboard
 Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
