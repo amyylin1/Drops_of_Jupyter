@@ -6,6 +6,7 @@
 
 - An analysis of the diabetic population and the future impact of living longer 
 - Use supervised machine learning to predict who will have diabetic 
+- Use SQL and Tableau to understand the demographics of regions and the Diabetes outcomes
 
 
 #### Background
@@ -33,24 +34,26 @@
 
 ### Objective
 
-This analysis aims to determine how diabetes data continue to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
+This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
  
  
-### Description of the data source
+### Description of the data sources
 
 - 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)
     - link: https://www.cdc.gov/nchs/nhis/2021nhis.htm
-
-- Table: Sample adult interview
-    - Demographics
-    - Health status: diabetes
-    - Insurance
-    - Income
+    - Table: Sample adult interview
+        - Demographics
+        - Health status: diabetes
+        - Insurance
+        - Income
+- 2020 USDA Food Environment Atlas Data: County Level Data on population, food access, and poverty.
+    - link: https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/
 
 
 ### Questions to address with this study
-- What demographic factors are correlated with diabetes?
+- What demographicand socioeconomic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
+- How successfully can demographics and socioeconomic status predict diabetes?
 
 ### Technologies Used
 ### Data Cleaning and Analysis
