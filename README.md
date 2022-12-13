@@ -57,3 +57,5 @@ This analysis aims to determine how diabetes data continue to trend in America. 
 ### Questions to address with this study
 - What demographic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes?
+- Are there any other findings that can be inferred from the analysis?
+- What are changes/solutions that can be made to positively impact this issue?
