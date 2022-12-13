@@ -62,6 +62,8 @@ Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used
 ### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use, and we will integrate Tableau to display the data.
 
+!(ERD)[/Users/elinadart/Desktop/Data Analytics BootCamp/Drops_Of_Jupyter/images/QuickDBD-export.png]
+
 ### Machine Learning
 Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
 
