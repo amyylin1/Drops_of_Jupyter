@@ -60,9 +60,9 @@ This analysis aims to determine how diabetes continues to trend in America.  Kno
 Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used to clean the data and export to SQL. Pandas and SQL will be used to perform an exploratory analysis. Further analysis will be completed using Machine Learning and Tableau. 
 
 ### Database Storage
-Elina edit as needed: PGAdmin is the database we intend to use, and we will integrate Tableau to display the data.
+Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
 
-![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/2882436c21667f04db81851cd92d9667ff948aca/images/QuickDBD-export.png)
+![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/81f3e1ca96d5cea53d8bd35e86a653bfb7a51d41/images/QuickDBD-export.png)
 
 ### Machine Learning
 Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
