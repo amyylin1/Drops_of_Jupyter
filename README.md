@@ -1,9 +1,20 @@
 # Drops of Jupyter
+The Longevity Dilemma - An analysis on the diabetic population and the future impact that living longer will have based on current medicine and technology. 
 
 ![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
 
-### Topic
+(we want: background/educational information
+the topic/question/problem/issue we are analyzing
+the objective/how we are going to solve/analyze/tackle this issue
+Results and walkthrough of the analysis
+Conclusion of the data analysis + other thoughts
+Resources or citations used for credit where due
+optional - list of files in our repo and what they are, the purpose, how to read them, extra info of the files.
 
+
+
+## Overview
+## Topic
 - An analysis of the diabetic population and the future impact of living longer 
 - Use supervised machine learning to predict who will have diabetic 
 
