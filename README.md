@@ -1,5 +1,4 @@
-# Drops_Of_Jupyter
-
+# Drops of Jupyter
 The Longevity Dilemma - An analysis on the diabetic population and the future impact that living longer will have based on current medicine and technology. 
 
 ![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
@@ -74,4 +73,3 @@ This analysis aims to determine how diabetes data continue to trend in America. 
 
 #### Manny's Perspective
 With diabetes playing a major role in health complications throughout my family history, understanding how to look at this problem through a true analytic perspective can give me insight on how this impacts the world.  It's one thing to see maps and charts, but another to be able to produce those things with my team and tell a story ourselves.  With the reality that we will live longer lives, the fact is that those extra years won't be great for everyone.  with longevity increasing, that may spell out extra years of pain and suffering for many.  For people with late onset prediabetes, this may mean seeing late-stage diabetes play out in their lifetimes.  This translates to more people dealing with dialysis, amputations, and blindness, to name some of the more severe outcomes of diabetes. The comprehensive nature of this illness cannot be tackled with a mere bootcamp project so I plan on tackling this issue past this course, but I would love to be able to use the skills learned througout this course to continue a conversation on how to be part of the solution to this epidemic that has claimed many loved ones.
-
