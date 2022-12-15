@@ -17,6 +17,7 @@ optional - list of files in our repo and what they are, the purpose, how to read
 ## Topic
 - An analysis of the diabetic population and the future impact of living longer 
 - Use supervised machine learning to predict who will have diabetic 
+- Use SQL and Tableau to understand the demographics of regions and the Diabetes outcomes
 
 
 #### Background
@@ -44,19 +45,25 @@ optional - list of files in our repo and what they are, the purpose, how to read
 
 ### Objective
 
-This analysis aims to determine how diabetes data continue to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
+This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
+
+### Communication Protocols
+- Daily Check in Via Slack 
+    - Report what you were able to complete each day at 7pm 
+        - If nothing to report, still check in and support team in whatever challenges they faced that day 
+-In case of emergency contact Elina (###)###-####
  
- 
-### Description of the data source
+### Description of the data sources
 
 - 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)
     - link: https://www.cdc.gov/nchs/nhis/2021nhis.htm
-
-- Table: Sample adult interview
-    - Demographics
-    - Health status: diabetes
-    - Insurance
-    - Income
+    - Table: Sample adult interview
+        - Demographics
+        - Health status: diabetes
+        - Insurance
+        - Income
+- 2020 USDA Food Environment Atlas Data: County Level Data on population, food access, and poverty.
+    - link: https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/
 
 - adult-summary.pdf
     - This PDF contains the entries/data that we used for this analysis.
@@ -66,7 +73,26 @@ This analysis aims to determine how diabetes data continue to trend in America. 
 
 
 ### Questions to address with this study
-- What demographic factors are correlated with diabetes?
-- Based on these factors, who will likely get diabetes?
+- What demographic socioeconomic factors are correlated with diabetes?
+- Based on these factors, who will likely get diabetes? 
+- How successfully can demographics and socioeconomic status predict diabetes?
 - Are there any other findings that can be inferred from the analysis?
 - What are changes/solutions that can be made to positively impact this issue?
+
+### Technologies Used
+### Data Cleaning and Analysis
+Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used to clean the data and export to SQL. Pandas and SQL will be used to perform an exploratory analysis. Further analysis will be completed using Machine Learning and Tableau. 
+
+### Database Storage
+Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
+
+![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/3a44b180e4edcae085be5658f86c3e093dcd6756/images/QuickDBD-export.png)
+
+### Machine Learning
+Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+
+### Dashboard
+Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
+
+#### Manny's Perspective
+With diabetes playing a major role in health complications throughout my family history, understanding how to look at this problem through a true analytic perspective can give me insight on how this impacts the world.  It's one thing to see maps and charts, but another to be able to produce those things with my team and tell a story ourselves.  With the reality that we will live longer lives, the fact is that those extra years won't be great for everyone.  with longevity increasing, that may spell out extra years of pain and suffering for many.  For people with late onset prediabetes, this may mean seeing late-stage diabetes play out in their lifetimes.  This translates to more people dealing with dialysis, amputations, and blindness, to name some of the more severe outcomes of diabetes. The comprehensive nature of this illness cannot be tackled with a mere bootcamp project so I plan on tackling this issue past this course, but I would love to be able to use the skills learned througout this course to continue a conversation on how to be part of the solution to this epidemic that has claimed many loved ones.
