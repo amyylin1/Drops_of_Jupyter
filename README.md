@@ -46,6 +46,7 @@ optional - list of files in our repo and what they are, the purpose, how to read
 ### Objective
 
 This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
+
 ### Communication Protocols
 - Daily Check in Via Slack 
     - Report what you were able to complete each day at 7pm 
@@ -85,7 +86,7 @@ Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used
 ### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
 
-![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/81f3e1ca96d5cea53d8bd35e86a653bfb7a51d41/images/QuickDBD-export.png)
+![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/3a44b180e4edcae085be5658f86c3e093dcd6756/images/QuickDBD-export.png)
 
 ### Machine Learning
 Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
