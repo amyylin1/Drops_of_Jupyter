@@ -1,6 +1,5 @@
 # Drops_Of_Jupyter
 
-# Drops of Jupyter
 The Longevity Dilemma - An analysis on the diabetic population and the future impact that living longer will have based on current medicine and technology. 
 
 ![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
