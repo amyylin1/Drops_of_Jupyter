@@ -35,7 +35,11 @@
 ### Objective
 
 This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
- 
+### Communication Protocols
+- Daily Check in Via Slack 
+    - Report what you were able to complete each day at 7pm 
+        - If nothing to report, still check in and support team in whatever challenges they faced that day 
+-In case of emergency contact Elina (###)###-####
  
 ### Description of the data sources
 
