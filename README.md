@@ -1,9 +1,20 @@
 # Drops of Jupyter
+The Longevity Dilemma - An analysis on the diabetic population and the future impact that living longer will have based on current medicine and technology. 
 
 ![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
 
-### Topic
+(we want: background/educational information
+the topic/question/problem/issue we are analyzing
+the objective/how we are going to solve/analyze/tackle this issue
+Results and walkthrough of the analysis
+Conclusion of the data analysis + other thoughts
+Resources or citations used for credit where due
+optional - list of files in our repo and what they are, the purpose, how to read them, extra info of the files.
 
+
+
+## Overview
+## Topic
 - An analysis of the diabetic population and the future impact of living longer 
 - Use supervised machine learning to predict who will have diabetic 
 - Use SQL and Tableau to understand the demographics of regions and the Diabetes outcomes
@@ -53,11 +64,19 @@ This analysis aims to determine how diabetes continues to trend in America.  Kno
 - 2020 USDA Food Environment Atlas Data: County Level Data on population, food access, and poverty.
     - link: https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/
 
+- adult-summary.pdf
+    - This PDF contains the entries/data that we used for this analysis.
+
+- adult-codebook.pdf
+    - This PDF contains the key's for the variables in the adult-summary.pdf.
+
 
 ### Questions to address with this study
-- What demographicand socioeconomic factors are correlated with diabetes?
+- What demographic socioeconomic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
 - How successfully can demographics and socioeconomic status predict diabetes?
+- Are there any other findings that can be inferred from the analysis?
+- What are changes/solutions that can be made to positively impact this issue?
 
 ### Technologies Used
 ### Data Cleaning and Analysis
@@ -73,3 +92,6 @@ Amy edit as needed: SciKitLearn is the ML library we'll be using to create a cla
 
 ### Dashboard
 Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
+
+#### Manny's Perspective
+With diabetes playing a major role in health complications throughout my family history, understanding how to look at this problem through a true analytic perspective can give me insight on how this impacts the world.  It's one thing to see maps and charts, but another to be able to produce those things with my team and tell a story ourselves.  With the reality that we will live longer lives, the fact is that those extra years won't be great for everyone.  with longevity increasing, that may spell out extra years of pain and suffering for many.  For people with late onset prediabetes, this may mean seeing late-stage diabetes play out in their lifetimes.  This translates to more people dealing with dialysis, amputations, and blindness, to name some of the more severe outcomes of diabetes. The comprehensive nature of this illness cannot be tackled with a mere bootcamp project so I plan on tackling this issue past this course, but I would love to be able to use the skills learned througout this course to continue a conversation on how to be part of the solution to this epidemic that has claimed many loved ones.
