@@ -1,4 +1,4 @@
-
+-- USE Drops_of_Jupyter
 CREATE TABLE "Individual" (
     "ID" 		VARCHAR(12)   	NOT NULL,
     "Age" 		INT   			NOT NULL,
