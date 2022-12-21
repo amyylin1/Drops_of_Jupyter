@@ -103,8 +103,8 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 #### Explanation of model choice
 
 -	We choose logistic regression to predict factor(s) that are correlated with diabetes. 
--	All variables (except for weight and age) are categorical variables. 
--	The target variable only has two possible values, whether a person is taking diabetic pills.  When this classification model encounters new data, it predict whether the individual would have diabetes.
+-	All variables (except for weight, age, and poverty_ratio) are categorical variables. 
+-	The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
 -	Limitation: the accuracy from a single variable is low, suggesting that multiple factors are in play. 
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
 
