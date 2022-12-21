@@ -89,7 +89,11 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/3a44b180e4edcae085be5658f86c3e093dcd6756/images/QuickDBD-export.png)
 
 ### Machine Learning
-Amy edit as needed: SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+[scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
+
+- Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
+- Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+
 
 ### Dashboard
 Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
