@@ -14,13 +14,12 @@ optional - list of files in our repo and what they are, the purpose, how to read
 
 
 ## Overview
-## Topic
+### Topic
 - An analysis of the population and diabetic related variables 
 - Use supervised machine learning to predict who will have diabetic 
 - Use SQL and Tableau to understand the demographics of regions and the Diabetes outcomes
 
-
-#### Background
+### Background
 
 - According to the US census, we are nearing a point in history where the older population will outnumber the younger.  
 - “By 2034 (previously 2035), there will be 77.0 million (previously 78.0) people 65 years and older compared to 76.5 million (previously 76.7 million) under the age of 18.” 
@@ -41,7 +40,6 @@ optional - list of files in our repo and what they are, the purpose, how to read
     - With the advances in medicine, Americans will live with these chronic conditions for many more years, and with an already strained healthcare system, we will have to prepare for far more dialysis, prosthetics, and resources for the blind due to diabete's direct impact on these health conditions. 
     
     - This will amplify for those in lower socioeconomic communities who studies show are disproportionately affected by diabetes in comparison to those communities of higher education and economic status. 
-
 
 ### Objective
 
@@ -79,30 +77,30 @@ Our team is made up of 4 individuals each working using different tools. To stre
     - adult-codebook.pdf
         - This PDF contains the key's for the variables in the adult-summary.pdf.
 
-### Technologies Used
-## Data Cleaning and Analysis
+## Technologies Used
+### Data Cleaning and Analysis
 Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used to clean the data and export to SQL. Pandas and SQL will be used to perform an exploratory analysis. Further analysis will be completed using Machine Learning and Tableau. 
 
-## Database Storage
+### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
 
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/3a44b180e4edcae085be5658f86c3e093dcd6756/images/QuickDBD-export.png)
 
-## Machine Learning
-# Description of preliminary data processing
+### Machine Learning
+#### Description of preliminary data processing
 
 -	Drop missing values since most machine learning algorithms cannot work with missing features
 -	Handle categorical attribute
 
-# Description of data features selection
+#### Description of data features selection
 -	Features:  variables in demographics, diabetic-related health status, general health status, insurance, and income level.
 -	These features are chosen because of their potential correlation with our target: “Taking diabetic pills”. 
 
-# Description of how data is split into training and test set
+#### Description of how data is split into training and test set
 -	Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
 -	We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
 
-# Explanation of model choice
+#### Explanation of model choice
 
 -	We choose logistic regression to predict factor(s) that are correlated with diabetes. 
 -	All variables (except for weight and age) are categorical variables. 
@@ -110,7 +108,7 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 -	Limitation: the accuracy from a single variable is low, suggesting that multiple factors are in play. 
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
 
-## Dashboard
+### Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
 
 Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
