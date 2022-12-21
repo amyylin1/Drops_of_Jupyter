@@ -87,7 +87,7 @@ Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used
 Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
 
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/3a44b180e4edcae085be5658f86c3e093dcd6756/images/QuickDBD-export.png)
-
+![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 ### Machine Learning
 [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
 
