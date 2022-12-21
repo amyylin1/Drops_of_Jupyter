@@ -4,20 +4,21 @@
 
 CREATE TABLE Individual (
     ID				VARCHAR(12)   	NOT NULL,
-    Age 			INT   			,
-    Gender 			INT   			,
-    Race 			INT   			,
-    Education		INT   			,
+    Age 			INT  			,
+    Gender 			VARCHAR(10)   			,
+    Race 			VARCHAR(100)   			,
+    Education		VARCHAR(100)   			,
 	Poverty_Ratio 	DEC(4,2)		,
-	Region 			INT   			,
+	Region 			VARCHAR(15)   			,
     CONSTRAINT "pk_Individual" PRIMARY KEY (ID)
 );
 
 CREATE TABLE General_Health_Status (
-    ID 			VARCHAR(12)   	NOT NULL,
-    Diabetes 	VARCHAR(5)   	,
-    Weight 		INT   			,
-    BMI 		INT  	        ,
+    ID 			    VARCHAR(12)   	NOT NULL,
+    Diabetes 	    VARCHAR(5)   	,
+    Prediabetes     VARCHAR(10)     ,
+    Weight 		    INT   			,
+    Categorical_BMI VARCHAR()  	    ,
     CONSTRAINT "pk_General_Health_Status" PRIMARY KEY (ID)
 );
 
