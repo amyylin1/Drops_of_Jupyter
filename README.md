@@ -96,7 +96,8 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 
 
 ### Dashboard
-Manny Edit as needed: In addition to using Tableau, we will also integrate JavaScript with Bootstrap and CSS for a fully functioning and interactive dashboard. It will be hosted on Gitpages.
+
+Manny Edit as needed: In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___ (Gitpages).
 
 ### Tools
 >**Languages:** <br>
