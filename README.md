@@ -84,13 +84,17 @@ Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used
 ### Database Storage
 Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
 
+
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/e1182de36d7d52bbcd8f819ee655abede02891bf/images/ERD_12_21_22.png)
 
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 
-
 ### Machine Learning
 #### Description of preliminary data processing
+
+[scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
+
+# elina down v
 
 -	Drop missing values since most machine learning algorithms cannot work with missing features
 -	Handle categorical attribute
@@ -111,9 +115,21 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 -	Limitation: the accuracy from a single variable is low, suggesting that multiple factors are in play. 
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
 
+#Amy old code review with what is above from elina ^
+- Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
+- Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+#Amy ^
+
 ### Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
 
-Manny Edit as needed: In addition to using Tableau, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
 
+Manny Edit as needed: In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___ (Gitpages).
 
+### Tools
+>**Languages:** <br>
+>Python, JavaScript, PostgreSQL <br> 
+>**Software:** <br>
+>VS Code, JupyterNotebook, Pandas, pgAdmin, GoogleCollab, Microsoft Excel, TableauPublic, Github, Bootstrap, HTML, CSS
+>**Resources:** <br>
+>2021 National Health Interview Survey (NHIS), Google, Stack Overflow
