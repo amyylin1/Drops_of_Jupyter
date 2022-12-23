@@ -114,11 +114,9 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 -	The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
 -	Limitation: the accuracy from a single variable is low, suggesting that multiple factors are in play. 
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
-
-#Amy old code review with what is above from elina ^
 - Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
-#Amy ^
+
 
 ### Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
