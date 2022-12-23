@@ -107,15 +107,17 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 -	Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
 -	We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
 
-#### Explanation of model choice
-
+### Explanation of model choices
+#### Initial model: Logistic regression 
 -	We choose logistic regression to predict factor(s) that are correlated with diabetes. 
 -	All variables (except for weight, age, and poverty_ratio) are categorical variables. 
 -	The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
--	Limitation: the accuracy from a single variable is low, suggesting that multiple factors are in play. 
--	Benefit:  logistic regression is relatively simple to execute and understand. 
 - Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+-	Benefit:  logistic regression is relatively simple to execute and understand. 
+- 	Limitation: the accuracy from one or multiple variables is low.  Based on the data visualization.  Linear regression is more suitable.
+
+#### Model 2:  Linear regression
 
 
 ### Dashboard
