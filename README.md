@@ -117,10 +117,8 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 - Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
-- 	Limitation: the accuracy from one or multiple variables is low.  Based on the data visualization.  Linear regression is more suitable.
-
-#### BMI and diabetes
-
+- 	Limitation: the accuracies from one or multiple variables are low.  Based on the data visualization below,   linear regression is more suitable.
+- Fig. BMI and diabetes 
 ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
 
 
