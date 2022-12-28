@@ -89,41 +89,36 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 
+
 ### Machine Learning
+
 #### Description of preliminary data processing
 
-[scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
-
-# elina down v
-
+- [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
 -	Drop missing values since most machine learning algorithms cannot work with missing features
 -	Handle categorical attribute
 
 #### Description of data features selection
--	Features:  variables in demographics, diabetic-related health status, general health status, insurance, and income level.
--	These features are chosen because of their potential correlation with our target: “Taking diabetic pills”. 
+
+-	Features:  variables in demographics, diabetic-related health status, general health status, insurance, income level, and education. 
+-	These features are chosen because of their potential correlation with diabetes. 
 
 #### Description of how data is split into training and test set
--	Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
--	We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
 
-### Explanation of model choices
+-	Data is split into training and testing sets by using Scikit-learn's train_test_split function. 
+-	We end up with two sets of data: X_train and y_train set, X_test and y_test set.  Train and test sets are 75% and 25% of the original data, respectively.   
 
-#### Initial model: Logistic regression 
+#### Explanation of model choices: Logistic regression 
 
--	We choose logistic regression to predict factor(s) that are correlated with diabetes. 
--	All variables (except for weight, age, and poverty_ratio) are categorical variables. 
--	The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
+-	We choose logistic regression to predict diabetes based on socio-economical factors.  
+-	All variables (except BMI, age, and income-to-poverty ratio) are categorical. 
+-	The target variable only has two possible outcomes, whether a person has diabetes or not.  When this classification model encounters new data, it predicts whether the individual has diabetes.
 - Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
-- 	Limitation: the accuracies from one or multiple variables are low.  Based on the data visualization below,   linear regression is more suitable.
-- Fig. BMI and diabetes 
+- 	Limitation: the accuracies from one or multiple variables are low.  
 
-    ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
-
-
-#### Model 2:  Linear regression
+We also tried linear regression and unsupervised learning to see whether they generated interesting results. 
 
 
 ### Dashboard
