@@ -122,8 +122,7 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 
     ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
 
-
-#### Model 2:  Linear regression
+We also tried linear regression and unsupervised learning to see whether they generate similar results. 
 
 
 ### Dashboard
