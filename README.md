@@ -90,12 +90,10 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 
 ### Machine Learning
+
 #### Description of preliminary data processing
 
-[scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
-
-# elina down v
-
+- [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
 -	Drop missing values since most machine learning algorithms cannot work with missing features
 -	Handle categorical attribute
 
