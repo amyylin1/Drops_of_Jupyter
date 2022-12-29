@@ -86,10 +86,15 @@ PGAdmin is the database tool we have used. We imported cleaned and transformed C
 
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 
-Our Sample Data contains:
-  - Over 28,000 observations
+#### Our Sample Data contains:
+  - Over 29,000 observations
   - 3,134 individuals with Diabetes
   - This is just over 10% and comprabable with population estimates. 
+  - 45% of our sample is male 
+  - 75% White, 11% African American, 6% Asian
+  - Average Poverty Ratio is 4 (meaning income is 4 times the national poverty threshold)
+  - 39% have attained at least a Bachelor's Degree
+  
 
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
