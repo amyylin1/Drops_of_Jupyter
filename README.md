@@ -11,8 +11,6 @@ Conclusion of the data analysis + other thoughts
 Resources or citations used for credit where due
 optional - list of files in our repo and what they are, the purpose, how to read them, extra info of the files.
 
-
-
 ## Overview
 ### Topic
 - An analysis of the population and diabetic related variables 
@@ -79,10 +77,10 @@ Our team is made up of 4 individuals each working using different tools. To stre
 
 ## Technologies Used
 ### Data Cleaning and Analysis
-Team we all need to edit here: Jupyter Notebook, and Python, Pandas will be used to clean the data and export to SQL. Pandas and SQL will be used to perform an exploratory analysis. Further analysis will be completed using Machine Learning and Tableau. 
+The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts, and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
 
 ### Database Storage
-Elina edit as needed: PGAdmin is the database we intend to use. We will import CSVs using Pandas and integrate with Tableau to display the data in a dashboard.
+PGAdmin is the database tool we have used. We imported cleaned and transformed CSVs using Pandas and integrated the data into our other analysis tools. PgAdmin4 can also be used to perform analysis. The images below include the ERD, which illustrates the structure of Database. Additionally, we have added an image to depict a join query that joins our tables so a user can compare socia-economic demographics along side an individual's health status. 
 
 
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/e1182de36d7d52bbcd8f819ee655abede02891bf/images/ERD_12_21_22.png)
@@ -90,52 +88,52 @@ Elina edit as needed: PGAdmin is the database we intend to use. We will import C
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
 
 ### Machine Learning
-#### Description of preliminary data processing
-
-[scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we'll be using to create our supervised and unsupervised model.
-
-# elina down v
-
--	Drop missing values since most machine learning algorithms cannot work with missing features
--	Handle categorical attribute
+#### Description of preliminary data processing with Machine Learning
+- First, all data is imported from the database into the google colab notebook that implements
+  the Machine Learning 
+- [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis 
+  library we used to create our supervised and unsupervised models.
+- Handle categorical attributes with get dummies code
 
 #### Description of data features selection
--	Features:  variables in demographics, diabetic-related health status, general health status, insurance, and income level.
--	These features are chosen because of their potential correlation with our target: “Taking diabetic pills”. 
+- Features:  variables in demographics (age, sex, race, education, poverty ratio, and region), diabetic-related health status, general health status, weight and BMI. 
+- Target: Diabetes
 
 #### Description of how data is split into training and test set
--	Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
--	We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
+- Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
+- We end up with four sets:  X is split into X_train and X_test sets, and y is split into 
+  y_train and y_test sets. 
 
 ### Explanation of model choices
 
-#### Initial model: Logistic regression 
+#### Model 1: Logistic regression 
 
--	We choose logistic regression to predict factor(s) that are correlated with diabetes. 
--	All variables (except for weight, age, and poverty_ratio) are categorical variables. 
--	The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
+- We chose logistic regression to measure the feature correlation probability to the target, 
+  Diabetes. 
+- All variables (except for weight, age, and poverty_ratio) are categorical variables. 
+- The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no.  When this classification model encounters new data, it predicts whether the individual would have diabetes.
 - Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
--	Benefit:  logistic regression is relatively simple to execute and understand. 
-- 	Limitation: the accuracies from one or multiple variables are low.  Based on the data visualization below,   linear regression is more suitable.
+- Benefit:  logistic regression is relatively simple to execute and understand. 
+- Limitation: the accuracies from one or multiple variables are low.  Based on the data 
+  visualization below,   linear regression is more suitable.
 - Fig. BMI and diabetes 
 
     ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
 
 
-#### Model 2:  Linear regression
+#### Model 2: Unsupervised Model 
 
 
 ### Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
 
-
-Manny Edit as needed: In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___ (Gitpages).
+In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on ___ (Gitpages).
 
 ### Tools
 >**Languages:** <br>
 >Python, JavaScript, PostgreSQL <br> 
 >**Software:** <br>
->VS Code, JupyterNotebook, Pandas, pgAdmin, GoogleCollab, Microsoft Excel, TableauPublic, Github, Bootstrap, HTML, CSS
+>VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 >**Resources:** <br>
 >2021 National Health Interview Survey (NHIS), Google, Stack Overflow
