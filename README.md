@@ -82,10 +82,14 @@ The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform t
 ### Database Storage
 PGAdmin is the database tool we have used. We imported cleaned and transformed CSVs using Pandas and integrated the data into our other analysis tools. PgAdmin4 can also be used to perform analysis. The images below include the ERD, which illustrates the structure of Database. Additionally, we have added an image to depict a join query that joins our tables so a user can compare socia-economic demographics along side an individual's health status. 
 
-
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/e1182de36d7d52bbcd8f819ee655abede02891bf/images/ERD_12_21_22.png)
 
 ![Join](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/29c761926660afb86efdce3850198d08b267529b/images/Join%20Query%20.png)
+
+Our Sample Data contains:
+  - Over 28,000 observations
+  - 3,134 individuals with Diabetes
+  - This is just over 10% and comprabable with population estimates. 
 
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
