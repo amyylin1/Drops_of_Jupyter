@@ -1,29 +1,30 @@
 console.log('working')
 
-// jsonData = d3.json("static/json/dataframe.json")
+// let promise = d3.json("static/js/dataframe.json");
 
 // get table references
 var tbody = d3.select("tbody");
 
-function buildTable() {
-  // Clear out any existing data
-  tbody.html("");
+function buildTable(promise) {
+  let promise = d3.json("static/js/dataframe.json");
+  promise.then((data) => {
 
-  // Loop through each object in the data and append row/cells for each val in row
-  d3.json("static/js/dataframe.json").then((data) => {
+    // Clear out any existing data
+    tbody.html("");
+
+    // Loop through each object in the data and append row/cells for each val in row
 
     data.forEach((dataRow) => {
         // Append a row to the table body
         let row = tbody.append("tr");
         
-        // Loop through each field in the dataRow and add
-        // each value as a table cell (td)
+        // Loop through each field in the dataRow and add each value as a table cell (td)
         Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
         });
+    });
   });
-});
 }
 
 // 1. Create a variable to keep track of all the filters as an object.
@@ -70,26 +71,27 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
+    let promise = d3.json("static/js/dataframe.json");
      
-    d3.json("static/js/dataframe.json").then((data) => {
+    // d3.json("static/js/dataframe.json").then((data) => {
       // 9. Loop through all of the filters and keep any data that matches the filter values
-
+      let filteredData = promise;
       Object.entries(filters).forEach(([key, value]) => {
-        // filteredData = filteredData.filter(row => row[key] === value);
-        // debugger;
-        filteredData = data.filter(row => row[key] === value);
-        console.log(filteredData)
+        filteredData = filteredData.then((data) => {
+          let results = data.filter(row => row[key] === value);
+          return results;
+        })
       });
   
       // 10. Rebuild the table using the filtered data
-      buildTable(filteredData);
-      console.log("Done Building.")
-  });
+      return filteredData.then((filteredData) => {
+        buildTable(filteredData);
+      });
+      // console.log("Done Building.")
 }; 
   
   // 2. Attach an event to listen for changes to each filter
   
-  // d3.selectAll("#filter-btn").on("change", updateFilters);
   d3.selectAll("input").on("change", updateFilters);
 
 

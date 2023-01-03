@@ -39,7 +39,7 @@
 
 <body>
 
-    <!-- Top of the page "Navigation bar style" -->
+    <!-- Top of the page -->
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top text-uppercase">
             <a class="navbar-brand" href="index.html">Drops of Jupyter</a>
@@ -154,71 +154,54 @@
                 <form class="bg-dark" style="color:whitesmoke">
                     <p>Filter Search</p>
                     <ul class="list-group bg-dark">
-                        <!-- "ID":"H037403",
-                        "General_Health_Status":"Good",
-                        "Diabetes":"no",
-                        "Prediabetes":"no",
-                        "Weight_Lbs":200.0,
-                        "Categorical_BMI":"Overweight",
-                        "Region":"South",
-                        "Age":55,
-                        "Gender":"Male",
-                        "Education":"Some_College_no_degree",
-                        "Race":"African_American_Only",
-                        "Poverty_Ratio":1.73 -->
 
-                        <!-- ID element -->
                         <!-- "Age" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
-                            <label for="General_Health_Status">Enter General Health Status</label>
-                            <input type="text" id="General_Health_Status" class="form-control" placeholder="Very_Good" />
+                            <label for="General_Health_Status">General Health Status</label>
+                            <input type="text" id="General_Health_Status" class="form-control-sm" placeholder="Very_Good" />
                         </li>
 
                         <!-- "Region" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Region">Enter Region</label>
-                            <input type="text" id="Region" class="form-control" placeholder="North" />
+                            <input type="text" id="Region" class="form-control-sm" placeholder="North" />
                         </li>
 
                         <!-- "Gender" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Gender">Enter Gender</label>
-                            <input type="text" id="Gender" class="form-control" placeholder="Female"  />
+                            <input type="text" id="Gender" class="form-control-sm" placeholder="Female"  />
                         </li>
 
                         <!-- "Education" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Education">Enter Education</label>
-                            <input type="text" id="Education" class="form-control" placeholder="Bachelor" />
+                            <input type="text" id="Education" class="form-control-sm" placeholder="Bachelor" />
                         </li>
 
                         <!-- "Diabetic Status" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Diabetes">Enter Diabetic Status</label>
-                            <input type="text" id="Diabetes" class="form-control" placeholder="Yes" />
+                            <input type="text" id="Diabetes" class="form-control-sm" placeholder="Yes" />
                         </li>
 
                         <!-- "BMI Status" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Categorical_BMI">Enter BMI Status</label>
-                            <input type="text" id="Categorical_BMI" class="form-control" placeholder="Overweight" />
+                            <input type="text" id="Categorical_BMI" class="form-control-sm" placeholder="Overweight" />
                         </li>
 
                         <!-- "Age" element -->
                         <li class="list-group-item bg-dark" style="color:whitesmoke">
                             <label for="Age">Enter Age</label>
-                            <input type="text" id="Age" class="form-control" placeholder="35" />
+                            <input type="text" id="Age" class="form-control-sm" placeholder="35" />
                         </li>
-
-                        <!-- <li class="list-group-item bg-dark"> -->
-                            <!-- <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button> -->
-                        <!-- </li> -->
                     </ul>
                 </form>
             </div>
 
             <div class="col-md-10 interactive-chart" style="height:50rem">
-                <!-- Table of Sightings Data -->
+                <!-- Table of Diabetes Data -->
                 <table class="table table-striped">
                     <thead>
                         <tr>
