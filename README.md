@@ -1,12 +1,8 @@
 # The Longevity Dilemma
-Drops of Jupyter group - 
+## An analysis on the socioeconomic factors in the population of diabetics and nondiabetics in the United States.
+Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 
-[Amy Ying Lin](https://github.com/amyylin1),
-[Elina Dart](https://github.com/DartElina),
-[Manny Linares](https://github.com/MRLinares),
-[Kevin Daniliuk](https://github.com/DaniliukK95)
 
- - An analysis on the diabetic population and the future impact that living longer. 
 
 ![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
 
