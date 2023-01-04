@@ -113,8 +113,6 @@ PGAdmin is the database tool we have used. We imported cleaned and transformed C
 - We end up with four sets:  X is split into X_train and X_test sets, and y is split into 
   y_train and y_test sets. 
 
-### Explanation of model choices
-
 #### Model 1: Logistic regression 
 
 - We chose logistic regression to measure the feature correlation probability to the target, 
@@ -133,6 +131,17 @@ PGAdmin is the database tool we have used. We imported cleaned and transformed C
 
 #### Model 2: Unsupervised Model 
 
+#### Explanation of model choices: Logistic regression 
+
+-	We choose logistic regression to predict diabetes based on socio-economical factors.  
+-	All variables (except BMI, age, and income-to-poverty ratio) are categorical. 
+-	The target variable only has two possible outcomes, whether a person has diabetes or not.  When this classification model encounters new data, it predicts whether the individual has diabetes.
+- Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
+- Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+-	Benefit:  logistic regression is relatively simple to execute and understand. 
+- Limitation: the accuracies from one or multiple variables are low.  
+
+We also tried linear regression and unsupervised learning to see whether they generated interesting results. 
 
 ### Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
