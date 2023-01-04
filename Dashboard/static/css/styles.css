@@ -91,6 +91,11 @@ section h2 {
     line-height: 1.5;
 }
 
+.bottom-row {
+    padding-bottom: 5rem;
+    margin-bottom: 50px;
+}
+
 .interactive-chart {
     height: 525px;
     overflow: scroll;
