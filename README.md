@@ -1,20 +1,16 @@
-DONE
 # The Longevity Dilemma
 ## An analysis of the diabetic and non-diabetic population in the United States. 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
 ![Intro_Pic](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
 _________________________________________
-DONE
 ## Overview
 ### Topic
 Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. 
 
-DONE
 ### Background
 _Diabetes_ is a chronic condition that affects the way the body processes blood sugar (glucose). It occurs when the body does not produce enough insulin, or when the body's cells do not properly use the insulin it has produced. Insulin is a hormone that helps regulate blood sugar levels but if not properly managed, diabetes can lead to serious health complications, including heart disease, stroke, kidney damage, blindness, and nerve damage.
 
-DONE
 Some Statistics:
 - Diabetes is a leading cause of death and disability, and it is the seventh leading cause of death globally.
 - Type 2 diabetes is the most common form of diabetes, accounting for around 90% of all cases (The one you can develop).
@@ -25,17 +21,16 @@ Some Statistics:
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
 ### Objective
-FILL IN
++++++FILL IN
 
-MAYBE MORE
 ### Questions to address with this study 
 - What demographic socioeconomic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
 - How successfully can demographics and socioeconomic status predict diabetes?
 - Are there any other findings that can be inferred from the analysis?
 - What are changes/solutions that can be made to positively impact this issue?
++++++EDIT/ADD MORE/REMOVE STUFF
 
-DONE
 ### Description of the data sources
 - Data Source: [2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
 - adult21.csv (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult21.csv)
@@ -47,8 +42,7 @@ DONE
 - readme.txt (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/readme.txt)
    - It is important to read this text file for running the code. 
 _________________________________________
-ARE WE DONE HERE?
-
++++++ARE WE DONE HERE?
 ## Data Cleaning and Analysis
 The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
 
@@ -109,18 +103,19 @@ IS THERE STUFF TO PUT HERE?
 We also tried linear regression and unsupervised learning to see if they generated interesting results. 
 _________________________________________
 ## Results and Conclusion
-FILL IN
-
++++++FILL IN
 
 ### Things we would have done differently
 (preparation, execution)
-FILL IN 
++++++FILL IN 
 _________________________________________
 ## Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
 In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on ___ (Gitpages).
++++++EDIT THIS?
+
 ### How to navigate through the dashboard
-FILL IN
++++++FILL IN
 _________________________________________
 ## Tools, Languages and Resources
 
