@@ -21,30 +21,25 @@ Some Statistics:
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
 ### Objective
-This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
+Our goal is to obtain an extensive data source on diabetes that has information on more than 5,000 people with many variables to allow for 
 
 ### Questions to address with this study
-
 - What demographic socioeconomic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
 - How successfully can demographics and socioeconomic status predict diabetes?
 - Are there any other findings that can be inferred from the analysis?
 - What are changes/solutions that can be made to positively impact this issue?
 
-
- 
 ### Description of the data sources
-- [Data Source: 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
-    - Table: Sample adult interview
-        - Demographics
-        - Health status: diabetes
-        - Insurance
-        - Income
-    - adult-summary.pdf
-        - This PDF contains the entries/data that we used for this analysis.
-    - adult-codebook.pdf
-        - This PDF contains the key's for the variables in the adult-summary.pdf.
-
+- Data Source: [2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
+- adult21.csv (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult21.csv)
+   - This CSV is the RAW data of everything.
+- adult-summary.pdf (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult-summary.pdf)
+   - This PDF contains the descriptions of the variables.
+- adult-codebook.pdf (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult-codebook.pdf)
+   - This PDF was explains the meanings of the numerical values. 
+- readme.txt (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/readme.txt)
+   - It is important to read this text file for running the code. 
 _________________________________________
 ## Data Cleaning and Analysis
 The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts, and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
@@ -126,11 +121,13 @@ In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/vi
 FILL IN
 _________________________________________
 ## Tools, Languages and Resources
+
 >**Languages:** <br>
 >Python, JavaScript, PostgreSQL <br> 
+
 >**Software:** <br>
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
+
 >**Resources:** <br>
->2021 National Health Interview Survey (NHIS)
->[Google](https://www.google.com/)
->[Stack Overflow](https://stackoverflow.com/)
+>[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), (Centers for Disease Control and Prevention)[https://www.cdc.gov/], [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/)
+
