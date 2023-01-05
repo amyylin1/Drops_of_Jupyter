@@ -59,6 +59,8 @@
               </div>
             <h1 class="mb-0">Welcome</h1>
             <hr />
+            <img src=https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b9461a76289325.5c651812bdd2e.gif>
+              
 
             <!-- Statement piece -->
             <p class="Statement">
@@ -78,172 +80,111 @@
             </h2>
             <hr class="star-dark mb-5" />
 
-
-           <!-- Interactive Predictor -->
-        <div id="selDataset"></div>
-        <script>
-             data = [
-            { name: "Diabetes", category: ["yes", "no"]},
-            { name: "Prediabetes", category: ["yes", "no"]},
-            { name: "Weight_Lbs", category: []},
-            { name: "Categorical_BMI", category: ["Obese", 
-                                                "Overweight", 
-                                                "Healthy_Weight", 
-                                                "Underweight"]},
-            { name: "Age", category: [] },
-            { name: "Gender", category: ["Male", "Female"]},
-            { name: "Race", category: ['White_Only',
-                                        'African_American_Only',
-                                        'Asian_Only',
-                                        'AIAN_Only',
-                                        'AIAN_AND_other',
-                                        'Other']},
-            { name: 'Education', category: ['Grade_1-11', 
-                                            '12th_Grade_no_diploma', 
-                                            'GED_Equivalent', 
-                                            'High_School_Graduate', 
-                                            'Some_College_no_degree',
-                                            'Associates_Occupational_Technical_Vocational',
-                                            'Associates_Academic_Program',
-                                            'Bachelor',
-                                            'Masters',
-                                            'Greater_Than_Master']},
-            { name: "Poverty_Ratio", category: ""}
-        ];
-        
-        // Get the unique values in the "category" column
-        let categories = [...new Set(data.map(item => item.category))];
-        
-        // Create buttons for each unique value
-        let buttons = categories.map(category => {
-            let button = document.createElement("button");
-            button.innerText = category;
-            button.addEventListener("click", () => filterData(category));
-            return button;
-        });
-    
-        // Add the buttons to the page
-        let selectors = document.getElementById("selDataset");
-        buttons.forEach(button => selectors.appendChild(button));
-
-        </script>
-        <div class="container-fluid bg-dark text-center" style="color: whitesmoke">
-            <h2><b>Predictor</b></h2>
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Health Status</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
+            <div class ="col-md-12">
+            <!-- Interactive Predictor -->
+                <div class="col-md-5">
+                    <form class="container-fluid bg-dark text-left" style="color: whitesmoke">
+                        <br><h2><b>Predictor</b></h2><br>
+                        <label for="input1">Diabetes:</label><br>
+                            <select id="input1">
+                                <option value="null"></option>
+                                <option value="yes">yes</option>
+                                <option value="no">no</option>
+                            </select><br><br>
+                        <label for="input2">Prediabetes:</label><br>
+                            <select id="input2">
+                                <option value="null"></option>
+                                <option value="yes">yes</option>
+                                <option value="no">no</option>
+                            </select><br><br>
+                        <label for="input3">Input Weight in Lbs:</label><br>
+                            <input type="text" id="input3" class="form-control-sm"><br><br>
+                        <label for="input4">BMI Classification:</label><br>
+                            <select id="input1">
+                                <option value="null"></option>
+                                <option value="Obese">Obese</option>
+                                <option value="Overweight">Overweight</option>
+                                <option value="Healthy_Weight">Healthy Weight</option>
+                                <option value="Underweight">Underweight</option>
+                            </select><br><br>
+                        <label for="input5">Input Age:</label><br>
+                            <input type="text" id="input5" class="form-control-sm"><br><br>
+                        <label for="input6">Select Gender:</label><br>
+                            <select id="input6">
+                                <option value="null"></option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select><br><br>
+                        <label for="input7">Select Education:</label><br>
+                            <select id="input7">
+                                <option value="null"></option>
+                                <option value="Grade_1-11">1-11</option>
+                                <option value="12th_Grade_no_diploma">HS no Diploma</option>
+                                <option value="GED_Equivalent">GED Equivalent</option>
+                                <option value="High_School_Graduate">HS</option>
+                                <option value="Some_College_no_degree">Some College no degree</option>
+                                <option value="Associates_Occupational_Technical_Vocational">Associates Occupational/Technical/Vocational</option>
+                                <option value="Associates_Academic_Program">Associates Academic Program</option>
+                                <option value="Bachelor">Bachelor's Degree</option>
+                                <option value="Masters">Master's Degree</option>
+                                <option value="Greater_Than_Master">Terminal Degree</option>
+                            </select><br><br>
+                        <label for="input8">Select Race:</label><br>
+                            <select id="input8">
+                                <option value="null"></option>
+                                <option value="White_Only">White</option>
+                                <option value="African_American_Only">African American</option>
+                                <option value="Asian_Only">Asian</option>
+                                <option value="AIAN_Only">AIAN</option>
+                                <option value="AIAN_AND_other">AIAN Mixed</option>
+                                <option value="Other">Other</option>
+                            </select><br><br>
+                        <label for="input9">Input Household Income:</label><br>
+                            <input type="text" id="input9" class="form-control-sm"><br><br>
+                        <label for="input9">Input Household Size:</label><br>
+                            <input type="text" id="input10" class="form-control-sm"><br><br>
+                    </form> 
                 </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Diabetes</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Prediabetes</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Weight (Lbs)</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>BMI</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Region</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Age</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Gender</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Education</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Race</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="well" style="background-color:white color: black">
-                    <h5><b>Poverty Ratio</b></h5>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                </div>
-
-            </div>
         </div>
+   
             <!-- Tableau Storyboard -->
 
-            <div class='tableauPlaceholder' 
-                id='viz1672537492272' 
-                style='position: relative'><noscript>
-                    <a href='#'>
-                        <img alt='Story 2 ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1_rss.png' 
-                            style='border: none' />
-                    </a></noscript>
-                        <object class='tableauViz' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                            <param name='embed_code_version' value='3' /> 
-                            <param name='site_root' value='' />
-                            <param name='name' value='finalproject_16711568635250&#47;Story2' />
-                            <param name='tabs' value='no' />
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1.png' /> 
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='language' value='en-US' />
-                            <param name='filter' value='publish=yes' />
-                        </object>
-            </div>                
-                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1672537492272');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                        vizElement.style.width='1016px';vizElement.style.height='991px';                    
-                    var scriptElement = document.createElement('script');                    
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);       
-                </script>
+                <div class="col-md-4">
+                    <div class='tableauPlaceholder' 
+                        id='viz1672537492272' 
+                        style='position: relative'><noscript>
+                            <a href='#'>
+                                <img alt='Story 2 ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1_rss.png' 
+                                    style='border: none' />
+                            </a></noscript>
+                                <object class='tableauViz' style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                    <param name='embed_code_version' value='3' /> 
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='finalproject_16711568635250&#47;Story2' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1.png' /> 
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='language' value='en-US' />
+                                    <param name='filter' value='publish=yes' />
+                                </object>
+                    </div>                
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1672537492272');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                                vizElement.style.width='1016px';vizElement.style.height='991px';                    
+                            var scriptElement = document.createElement('script');                    
+                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                                vizElement.parentNode.insertBefore(scriptElement, vizElement);       
+                        </script>
+                </div>
+            </div>
     </section>
 
     <!-- Interactive Chart -->
@@ -472,8 +413,7 @@
         </div>
     </div>
 
-<!-- link D3.js and app.js to the HTML -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
+<!-- link D3.js and files to the HTML -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="static/js/dataframe.json"></script>
 <script src="static/js/logic.js"></script>
