@@ -20,15 +20,7 @@ Some Statistics:
 
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
-Problem: 
-    - Given the extent that diabetes has affected our country, and its contribution to devastating comorbidities, particularly in the end stages, it is concerning that those years of extreme poor health will be extended.
-    
-    - With the advances in medicine, Americans will live with these chronic conditions for many more years, and with an already strained healthcare system, we will have to prepare for far more dialysis, prosthetics, and resources for the blind due to diabete's direct impact on these health conditions. 
-    
-    - This will amplify for those in lower socioeconomic communities who studies show are disproportionately affected by diabetes in comparison to those communities of higher education and economic status. 
-
 ### Objective
-
 This analysis aims to determine how diabetes continues to trend in America.  Knowing that communities of lower socioeconomic status are more heavily impacted, we want to see what it will take for those populations to have the resources necessary in preparation for living longer with diabetes. 
 
 ### Questions to address with this study
@@ -139,4 +131,6 @@ _________________________________________
 >**Software:** <br>
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 >**Resources:** <br>
->2021 National Health Interview Survey (NHIS), Google, Stack Overflow, ChatGPT.
+>2021 National Health Interview Survey (NHIS)
+>[Google](https://www.google.com/)
+>[Stack Overflow](https://stackoverflow.com/)
