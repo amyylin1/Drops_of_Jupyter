@@ -10,27 +10,36 @@
     <title>Drops of Jupyter | Final Project</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous" />
     
     <!-- Fork Awesome (more icon styles) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" 
-        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" 
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" 
+        crossorigin="anonymous">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" 
+        rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="static/css/styles.css" 
+        rel="stylesheet" />
+
 </head>
 
-<body id="page-top">
+<body>
 
-    <!-- Top of the page "Navigation bar style" -->
+    <!-- Top of the page -->
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top text-uppercase">
             <a class="navbar-brand" href="index.html">Drops of Jupyter</a>
@@ -40,15 +49,15 @@
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://cdn.pixabay.com/photo/2016/12/05/19/49/syringe-1884784_960_720.jpg');
+                background-size: cover; background-position: center; color: black">
+                  <h1><b>Drops of Jupyter</b></h1> <br><br><br>
+                  <h2><b>Saving the world through data</b></h2>
+                </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://cdn.pixabay.com/photo/2016/12/05/19/49/syringe-1884784_960_720.jpg');
-                background-size: cover; background-position: center; color: black">
-                  <h1><b>Drops of Jupyter</b></h1> <br><br>
-                  <h3><b>Saving the world through data</b></h3>
-                </div>
               </div>
-            <h1 class="mb-0">Welcome to the Page</h1>
+            <h1 class="mb-0">Welcome</h1>
             <hr />
 
             <!-- Statement piece -->
@@ -70,34 +79,252 @@
             <hr class="star-dark mb-5" />
 
 
+           <!-- Interactive Predictor -->
+        <div id="selDataset"></div>
+        <script>
+             data = [
+            { name: "Diabetes", category: ["yes", "no"]},
+            { name: "Prediabetes", category: ["yes", "no"]},
+            { name: "Weight_Lbs", category: []},
+            { name: "Categorical_BMI", category: ["Obese", 
+                                                "Overweight", 
+                                                "Healthy_Weight", 
+                                                "Underweight"]},
+            { name: "Age", category: [] },
+            { name: "Gender", category: ["Male", "Female"]},
+            { name: "Race", category: ['White_Only',
+                                        'African_American_Only',
+                                        'Asian_Only',
+                                        'AIAN_Only',
+                                        'AIAN_AND_other',
+                                        'Other']},
+            { name: 'Education', category: ['Grade_1-11', 
+                                            '12th_Grade_no_diploma', 
+                                            'GED_Equivalent', 
+                                            'High_School_Graduate', 
+                                            'Some_College_no_degree',
+                                            'Associates_Occupational_Technical_Vocational',
+                                            'Associates_Academic_Program',
+                                            'Bachelor',
+                                            'Masters',
+                                            'Greater_Than_Master']},
+            { name: "Poverty_Ratio", category: ""}
+        ];
+        
+        // Get the unique values in the "category" column
+        let categories = [...new Set(data.map(item => item.category))];
+        
+        // Create buttons for each unique value
+        let buttons = categories.map(category => {
+            let button = document.createElement("button");
+            button.innerText = category;
+            button.addEventListener("click", () => filterData(category));
+            return button;
+        });
+    
+        // Add the buttons to the page
+        let selectors = document.getElementById("selDataset");
+        buttons.forEach(button => selectors.appendChild(button));
+
+        </script>
+        <div class="container-fluid bg-dark text-center" style="color: whitesmoke">
+            <h2><b>Predictor</b></h2>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Health Status</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Diabetes</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Prediabetes</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Weight (Lbs)</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>BMI</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Region</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Age</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Gender</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Education</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Race</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="well" style="background-color:white color: black">
+                    <h5><b>Poverty Ratio</b></h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            <!-- Tableau Storyboard -->
+
             <div class='tableauPlaceholder' 
-                 id='viz1671409314297' 
-                 style='position: relative'>
-                    <noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript>
-                        <object class='tableauViz'  style='display:none;'>
+                id='viz1672537492272' 
+                style='position: relative'><noscript>
+                    <a href='#'>
+                        <img alt='Story 2 ' 
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1_rss.png' 
+                            style='border: none' />
+                    </a></noscript>
+                        <object class='tableauViz' style='display:none;'>
                             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                             <param name='embed_code_version' value='3' /> 
                             <param name='site_root' value='' />
-                            <param name='name' value='finalproject_16711568635250&#47;Story1' />
+                            <param name='name' value='finalproject_16711568635250&#47;Story2' />
                             <param name='tabs' value='no' />
                             <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story1&#47;1.png' /> 
-                            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;finalproject_16711568635250&#47;Story2&#47;1.png' /> 
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
                             <param name='display_overlay' value='yes' />
                             <param name='display_count' value='yes' />
                             <param name='language' value='en-US' />
                             <param name='filter' value='publish=yes' />
                         </object>
-                    </div>                
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1671409314297');                   
-                        var vizElement = divElement.getElementsByTagName('object')[0];                    
-                        vizElement.style.width='1016px';vizElement.style.height='991px';                   
-                        var scriptElement = document.createElement('script');                    
+            </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1672537492272');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        vizElement.style.width='1016px';vizElement.style.height='991px';                    
+                    var scriptElement = document.createElement('script');                    
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                    </script>
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);       
+                </script>
+    </section>
+
+    <!-- Interactive Chart -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Filters for the Table -->
+                <form class="bg-dark" style="color:whitesmoke">
+                    <p>Filter Search</p>
+                    <ul class="list-group bg-dark">
+
+                        <!-- "Age" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="General_Health_Status">General Health Status</label>
+                            <input type="text" id="General_Health_Status" class="form-control-sm" placeholder="Very_Good" />
+                        </li>
+
+                        <!-- "Region" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Region">Enter Region</label>
+                            <input type="text" id="Region" class="form-control-sm" placeholder="North" />
+                        </li>
+
+                        <!-- "Gender" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Gender">Enter Gender</label>
+                            <input type="text" id="Gender" class="form-control-sm" placeholder="Female"  />
+                        </li>
+
+                        <!-- "Education" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Education">Enter Education</label>
+                            <input type="text" id="Education" class="form-control-sm" placeholder="Bachelor" />
+                        </li>
+
+                        <!-- "Diabetic Status" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Diabetes">Enter Diabetic Status</label>
+                            <input type="text" id="Diabetes" class="form-control-sm" placeholder="Yes" />
+                        </li>
+
+                        <!-- "BMI Status" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Categorical_BMI">Enter BMI Status</label>
+                            <input type="text" id="Categorical_BMI" class="form-control-sm" placeholder="Overweight" />
+                        </li>
+
+                        <!-- "Age" element -->
+                        <li class="list-group-item bg-dark" style="color:whitesmoke">
+                            <label for="Age">Enter Age</label>
+                            <input type="text" id="Age" class="form-control-sm" placeholder="35" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="col-md-10 interactive-chart" style="height:50rem">
+                <!-- Table of Diabetes Data -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>General Health</th>
+                            <th>Diabetes</th>
+                            <th>Prediabetes</th>
+                            <th>Weight (Lbs)</th>
+                            <th>BMI</th>
+                            <th>Region</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Education</th>
+                            <th>Race</th>
+                            <th>Poverty Ratio</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Tools Section -->
@@ -149,7 +376,7 @@
                 </div>
             </div>
 
-            <div class="col-md-10 offset-md-1">
+            <div class="col-md-10 offset-md-1 bottom-row">
                 <div class="row text-center skills-row">
                     <div class="col">
                         <p class="about-me text-center">
@@ -179,12 +406,12 @@
                         <p class="about-me text-center">
                             SQL
                         </p>
-                        <i class="fa fa-database fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-database fa-3x" aria-hidden="true"></i><br><br>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    
 
 
     <!-- Footer -->
@@ -244,6 +471,14 @@
             <small>Copyright &copy; Amy Ying Lin, Elina Dart, Kevin Daniliuk, Manny Linares <br> Columbia Bootcamps 2022-2023</small>
         </div>
     </div>
+
+<!-- link D3.js and app.js to the HTML -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="static/js/dataframe.json"></script>
+<script src="static/js/logic.js"></script>
+<script src="static/js/app.js"></script>
+
 </body>
 
 </html>
