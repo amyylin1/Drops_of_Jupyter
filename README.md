@@ -1,41 +1,26 @@
 # The Longevity Dilemma
-## An analysis on the socioeconomic factors in the population of diabetics and nondiabetics in the United States.
+## An analysis of the diabetic and non-diabetic population in the United States. 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
-
-
-
-![—Pngtree—rapid diabetes testingfinger test_5423791](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
-
-(we want: background/educational information
-the topic/question/problem/issue we are analyzing
-the objective/how we are going to solve/analyze/tackle this issue
-Results and walkthrough of the analysis
-Conclusion of the data analysis + other thoughts
-Resources or citations used for credit where due
-optional - list of files in our repo and what they are, the purpose, how to read them, extra info of the files.
-
+_________________________________________
+![Intro_Pic](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
+_________________________________________
 ## Overview
 ### Topic
-- An analysis of the population and diabetic related variables 
-- Use supervised machine learning to predict who will have diabetic 
-- Use SQL and Tableau to understand the demographics of regions and the Diabetes outcomes
+Our topic is on diabetes in the United States and the correlation of socioeconmic factors to this disease. 
 
 ### Background
+_Diabetes_ is a chronic condition that affects the way the body processes blood sugar (glucose). It occurs when the body does not produce enough insulin, or when the body's cells do not properly use the insulin it does produce. Insulin is a hormone that helps regulate blood sugar levels. If not properly managed, diabetes can lead to serious health complications, including heart disease, stroke, kidney damage, blindness, and nerve damage.
 
-- According to the US census, we are nearing a point in history where the older population will outnumber the younger.  
-- “By 2034 (previously 2035), there will be 77.0 million (previously 78.0) people 65 years and older compared to 76.5 million (previously 76.7 million) under the age of 18.” 
+Some Statistics:
+- Diabetes is a leading cause of death and disability, and it is the seventh leading cause of death globally.
+- Type 2 diabetes is the most common form of diabetes, accounting for around 90% of all cases (The one you can develop).
+- In 2021, an estimated 34.2 million people in the United States, or 10.5% of the population, had diabetes.
+- The prevalence of diabetes has been increasing in recent years, with the number of people with the condition increasing by 2 million per year since 2014.
+- African Americans, Hispanic/Latino Americans, American Indians, and Alaska Natives have a higher prevalence of diabetes than non-Hispanic whites.
 
-- The CDC states in its national DIABETES STATISTICS REPORT THAT:
-    - 37.3 MILLION PEOPLE HAVE DIABETES (~11% OF the US POPULATION) 
-    - 96 MILLION ARE PREDIABETIC (38% OF the ADULT POPULATION) 
-    - 26.4 MILLION OF THOSE PREDIABETIC ARE 65 YEARS OR OLDER (~50% OF THE SENIOR POPULATION) 
-    - In the last 20 years, diabetes diagnoses have more than doubled.
+_Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
-- Diabetes is:
-    - The Leading cause of kidney failure, lower-limb amputations, and adult blindness. 
-    - The 7th leading cause of death 
-
-- Problem: 
+Problem: 
     - Given the extent that diabetes has affected our country, and its contribution to devastating comorbidities, particularly in the end stages, it is concerning that those years of extreme poor health will be extended.
     
     - With the advances in medicine, Americans will live with these chronic conditions for many more years, and with an already strained healthcare system, we will have to prepare for far more dialysis, prosthetics, and resources for the blind due to diabete's direct impact on these health conditions. 
@@ -54,20 +39,10 @@ This analysis aims to determine how diabetes continues to trend in America.  Kno
 - Are there any other findings that can be inferred from the analysis?
 - What are changes/solutions that can be made to positively impact this issue?
 
-### Communication Protocols
 
-Our team is made up of 4 individuals each working using different tools. To streamline our communication to better support each other we have developed these protocols. 
-- Weekly assignments for each team member to complete
-- Daily Check-ins Via Slack 
-    - Report what you were able to complete each day at 7pm, as well as where you struggled and how your team can support you. 
-        - If nothing to report, still check in and support team in whatever challenges they faced that day.
--In case of emergency contact Elina (###)###-####.
-- Meeting via zoom 2-3 times per week to merge git hub, review code, and resolve conflicts together.
  
 ### Description of the data sources
-
-- 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)
-    - link: https://www.cdc.gov/nchs/nhis/2021nhis.htm
+- [Data Source: 2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
     - Table: Sample adult interview
         - Demographics
         - Health status: diabetes
@@ -78,8 +53,8 @@ Our team is made up of 4 individuals each working using different tools. To stre
     - adult-codebook.pdf
         - This PDF contains the key's for the variables in the adult-summary.pdf.
 
-## Technologies Used
-### Data Cleaning and Analysis
+_________________________________________
+## Data Cleaning and Analysis
 The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts, and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
 
 ### Database Storage
@@ -144,17 +119,24 @@ PGAdmin is the database tool we have used. We imported cleaned and transformed C
 -	Benefit:  logistic regression is relatively simple to execute and understand. 
 - Limitation: the accuracies from one or multiple variables are low.  
 
-We also tried linear regression and unsupervised learning to see whether they generated interesting results. 
+We also tried linear regression and unsupervised learning to see if they generated interesting results. 
+_________________________________________
+## Results and Conclusion
 
-### Dashboard
+### Things we would have done differently
+(preparation, execution)
+### 
+_________________________________________
+## Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
-
 In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on ___ (Gitpages).
-
-### Tools
+### How to navigate through the dashboard
+FILL IN
+_________________________________________
+## Tools, Languages and Resources
 >**Languages:** <br>
 >Python, JavaScript, PostgreSQL <br> 
 >**Software:** <br>
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 >**Resources:** <br>
->2021 National Health Interview Survey (NHIS), Google, Stack Overflow
+>2021 National Health Interview Survey (NHIS), Google, Stack Overflow, ChatGPT.
