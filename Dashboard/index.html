@@ -80,6 +80,53 @@
 
 
            <!-- Interactive Predictor -->
+        <div id="selDataset"></div>
+        <script>
+             data = [
+            { name: "Diabetes", category: ["yes", "no"]},
+            { name: "Prediabetes", category: ["yes", "no"]},
+            { name: "Weight_Lbs", category: []},
+            { name: "Categorical_BMI", category: ["Obese", 
+                                                "Overweight", 
+                                                "Healthy_Weight", 
+                                                "Underweight"]},
+            { name: "Age", category: [] },
+            { name: "Gender", category: ["Male", "Female"]},
+            { name: "Race", category: ['White_Only',
+                                        'African_American_Only',
+                                        'Asian_Only',
+                                        'AIAN_Only',
+                                        'AIAN_AND_other',
+                                        'Other']},
+            { name: 'Education', category: ['Grade_1-11', 
+                                            '12th_Grade_no_diploma', 
+                                            'GED_Equivalent', 
+                                            'High_School_Graduate', 
+                                            'Some_College_no_degree',
+                                            'Associates_Occupational_Technical_Vocational',
+                                            'Associates_Academic_Program',
+                                            'Bachelor',
+                                            'Masters',
+                                            'Greater_Than_Master']},
+            { name: "Poverty_Ratio", category: ""}
+        ];
+        
+        // Get the unique values in the "category" column
+        let categories = [...new Set(data.map(item => item.category))];
+        
+        // Create buttons for each unique value
+        let buttons = categories.map(category => {
+            let button = document.createElement("button");
+            button.innerText = category;
+            button.addEventListener("click", () => filterData(category));
+            return button;
+        });
+    
+        // Add the buttons to the page
+        let selectors = document.getElementById("selDataset");
+        buttons.forEach(button => selectors.appendChild(button));
+
+        </script>
         <div class="container-fluid bg-dark text-center" style="color: whitesmoke">
             <h2><b>Predictor</b></h2>
             <div class="row">
@@ -429,7 +476,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="static/js/dataframe.json"></script>
-<script src="static/js.js"></script>
+<script src="static/js/logic.js"></script>
 <script src="static/js/app.js"></script>
 
 </body>
