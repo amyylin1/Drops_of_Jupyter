@@ -73,6 +73,12 @@ section h2 {
     top: 0;
 }
 
+
+/* button {
+    background: url("https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/272250341_305044998328178_9052139494709559450_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=DiPFCQdVmmAAX_PpFDi&_nc_ht=scontent-lga3-1.xx&oh=00_AfDmFEkDoD4Md9LI-sadSIfiAKmB9hjAHu4nUG9AFmJXfQ&oe=63BBCBEF") no-repeat center center;
+    background-size: cover;
+} */
+
 @media (min-width: 992px) {
     div.container-fluid {
         padding-top: calc(2rem + 106px);
@@ -94,6 +100,13 @@ section h2 {
 .bottom-row {
     padding-bottom: 5rem;
     margin-bottom: 50px;
+}
+
+input, 
+select {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .interactive-chart {

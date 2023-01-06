@@ -111,10 +111,9 @@ function saveDataToPickle() {
   
     // Retrieve the data from the input fields
 
-    data.push(document.querySelector('#diabetes').value);
     data.push(document.querySelector('#prediabetes').value);
     data.push(document.querySelector('#weightlbs').value);
-    data.push(document.querySelector('#bmi').value);
+    data.push(document.querySelector('#height').value);
     data.push(document.querySelector('#age').value);
     data.push(document.querySelector('#gender').value);
     data.push(document.querySelector('#education').value);
@@ -137,16 +136,15 @@ function handleClick() {
 
         // Define the object with predetermined keys
         var dataObj = {
-            diabetes: data[0],
-            prediabetes: data[1],
-            weight: data[2],
-            bmi: data[3],
-            age: data[4],
-            gender: data[5],
-            education: data[6],
-            race: data[7],
-            hhincome: data[8],
-            hhsize: data[9]
+            Prediabetes: data[0],
+            Weight_Lbs: data[1],
+            height: data[2],
+            Age: data[3],
+            Gender: data[4],
+            Education: data[5],
+            Race: data[6],
+            HHincome: data[7],
+            HHcount: data[8]
         };
 
         // Log the object to the console
@@ -157,5 +155,3 @@ function handleClick() {
 
 // console.log(data);
 handleClick();
-
-  
