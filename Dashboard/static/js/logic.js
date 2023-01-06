@@ -105,21 +105,57 @@
 
 
 
-
 function saveDataToPickle() {
     // Create an empty list
     var data = [];
   
     // Retrieve the data from the input fields
-    for (var i = 1; i <= 10; i++) {
-      var inputId = "input" + i;
-      var inputValue = document.getElementById(inputId).value;
-      data.push(inputValue);
-    };
-    
-    console.log(data);
+
+    data.push(document.querySelector('#diabetes').value);
+    data.push(document.querySelector('#prediabetes').value);
+    data.push(document.querySelector('#weightlbs').value);
+    data.push(document.querySelector('#bmi').value);
+    data.push(document.querySelector('#age').value);
+    data.push(document.querySelector('#gender').value);
+    data.push(document.querySelector('#education').value);
+    data.push(document.querySelector('#race').value);
+    data.push(document.querySelector('#hhincome').value);
+    data.push(document.querySelector('#hhsize').value);
+
+    return data;
     // Serialize the list and write it to a file using the pickle module
-    var pickleData = pickle.dumps(data);
-    fs.writeFileSync("data.pkl", pickleData);
+    // var pickleData = pickle.dumps(data);
+    // fs.writeFileSync("data.pkl", pickleData);
   }
+
+function handleClick() {
+    let submitButton = document.querySelector("#submit-button");
+    submitButton.addEventListener('click', function(event) {
+        // Collect form data and store it in a list
+        event.preventDefault();
+        var data = saveDataToPickle();
+
+        // Define the object with predetermined keys
+        var dataObj = {
+            diabetes: data[0],
+            prediabetes: data[1],
+            weight: data[2],
+            bmi: data[3],
+            age: data[4],
+            gender: data[5],
+            education: data[6],
+            race: data[7],
+            hhincome: data[8],
+            hhsize: data[9]
+        };
+
+        // Log the object to the console
+        console.log(dataObj);
+        // console.log(data);
+    });
+};
+
+// console.log(data);
+handleClick();
+
   

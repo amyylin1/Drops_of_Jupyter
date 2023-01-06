@@ -72,6 +72,33 @@
         </div>
     </header>
 
+    <!-- <div class="login">
+        <hi>Predict diabetes</h1>
+             <h3> Select the following drop down to predict diabetes</h3>
+    ​ -->
+             <!--<p>How old are you?</p>
+             <input type="radio" id="child" name="age" value="child">
+             <label for="child">17 years or younger</label><br>
+             <input type="radio" id="adult" name="age" value="adult">
+             <label for="adult">18 - 64 years</label><br>
+             <input type="radio" id="senior" name="age" value="senior">
+             <label for="senior">65 years or older</label>
+            
+    ​
+         Main Input For Receiving Query to our ML
+        <form action="{{ url_for('predict')}}"method="post">
+            <input type="text" name="Education" placeholder="Education" required="required" />
+            <input type="text" name="BMI" placeholder="BMI" required="required" />
+    ​
+            <button type="submit" class="btn"›Predict</button>
+        </form>
+    ​
+        <br>
+        <br>
+        {{ prediction_text }}
+    ​
+    </div> -->
+
     <!-- Dashboard Grid Section -->
     <section class="dashboard" id="dashboard">
         <div class="container">
@@ -80,43 +107,54 @@
             </h2>
             <hr class="star-dark mb-5" />
 
-            <div class ="col-md-12">
             <!-- Interactive Predictor -->
-                <div class="col-md-5">
-                    <form class="container-fluid bg-dark text-left" style="color: whitesmoke">
-                        <br><h2><b>Predictor</b></h2><br>
-                        <label for="input1">Diabetes:</label><br>
-                            <select id="input1">
+                <div class="col-md-5 login">
+                    <br><h1><b>Predictor</b></h1><br>
+                        <h3> Input/Select the following drop downs to predict diabetes</h3>
+
+                    <form class="container-fluid bg-dark text-left" 
+                          style="color: whitesmoke">
+                          <!-- action='/predict' -->
+                          <!-- method="post"> -->
+                
+                        <label for="diabetes">Diabetes:</label><br>
+                            <select id="diabetes">
                                 <option value="null"></option>
                                 <option value="yes">yes</option>
                                 <option value="no">no</option>
                             </select><br><br>
-                        <label for="input2">Prediabetes:</label><br>
-                            <select id="input2">
+
+                        <label for="prediabetes">Prediabetes:</label><br>
+                            <select id="prediabetes">
                                 <option value="null"></option>
                                 <option value="yes">yes</option>
                                 <option value="no">no</option>
                             </select><br><br>
-                        <label for="input3">Input Weight in Lbs:</label><br>
-                            <input type="text" id="input3" class="form-control-sm"><br><br>
-                        <label for="input4">BMI Classification:</label><br>
-                            <select id="input4">
+
+                        <label for="weightlbs">Input Weight in Lbs:</label><br>
+                            <input type="text" id="weightlbs" class="form-control-sm"><br><br>
+
+                        <label for="bmi">BMI Classification:</label><br>
+                            <select id="bmi">
                                 <option value="null"></option>
                                 <option value="Obese">Obese</option>
                                 <option value="Overweight">Overweight</option>
                                 <option value="Healthy_Weight">Healthy Weight</option>
                                 <option value="Underweight">Underweight</option>
                             </select><br><br>
-                        <label for="input5">Input Age:</label><br>
-                            <input type="text" id="input5" class="form-control-sm"><br><br>
-                        <label for="input6">Select Gender:</label><br>
-                            <select id="input6">
+
+                        <label for="age">Input Age:</label><br>
+                            <input type="text" id="age" class="form-control-sm"><br><br>
+
+                        <label for="gender">Select Gender:</label><br>
+                            <select id="gender">
                                 <option value="null"></option>
                                 <option value="female">Female</option>
                                 <option value="male">Male</option>
                             </select><br><br>
-                        <label for="input7">Select Education:</label><br>
-                            <select id="input7">
+
+                        <label for="education">Select Education:</label><br>
+                            <select id="education">
                                 <option value="null"></option>
                                 <option value="Grade_1-11">1-11</option>
                                 <option value="12th_Grade_no_diploma">HS no Diploma</option>
@@ -129,8 +167,9 @@
                                 <option value="Masters">Master's Degree</option>
                                 <option value="Greater_Than_Master">Terminal Degree</option>
                             </select><br><br>
-                        <label for="input8">Select Race:</label><br>
-                            <select id="input8">
+
+                        <label for="race">Select Race:</label><br>
+                            <select id="race">
                                 <option value="null"></option>
                                 <option value="White_Only">White</option>
                                 <option value="African_American_Only">African American</option>
@@ -139,17 +178,27 @@
                                 <option value="AIAN_AND_other">AIAN Mixed</option>
                                 <option value="Other">Other</option>
                             </select><br><br>
-                        <label for="input9">Input Household Income:</label><br>
-                            <input type="text" id="input9" class="form-control-sm"><br><br>
-                        <label for="input9">Input Household Size:</label><br>
-                            <input type="text" id="input10" class="form-control-sm"><br><br>
+
+                        <label for="hhincome">Input Household Income:</label><br>
+                            <input type="text" id="hhincome" class="form-control-sm"><br><br>
+
+                        <label for="hhsize">Input Household Size:</label><br>
+                            <input type="text" id="hhsize" class="form-control-sm"><br><br>
+
+                        <button type="submit" id="submit-button" class="btn" style="background-color:rgb(145, 182, 214)">Predict</button>
+                        <br><br>
                     </form> 
+
+                    <br>
+                    <br>
+                    <h3>{{prediction_text}}</h3>
+
                 </div>
         </div>
    
             <!-- Tableau Storyboard -->
-
-                <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="col-md-12">
                     <div class='tableauPlaceholder' 
                         id='viz1672537492272' 
                         style='position: relative'><noscript>
@@ -184,7 +233,7 @@
                                 vizElement.parentNode.insertBefore(scriptElement, vizElement);       
                         </script>
                 </div>
-            </div>
+            
     </section>
 
     <!-- Interactive Chart -->
@@ -242,7 +291,7 @@
                 </form>
             </div>
 
-            <div class="col-md-10 interactive-chart" style="height:50rem">
+            <div class="col-md-10 interactive-chart" style="height:41rem">
                 <!-- Table of Diabetes Data -->
                 <table class="table table-striped">
                     <thead>
@@ -416,8 +465,8 @@
 <!-- link D3.js and files to the HTML -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="static/js/dataframe.json"></script>
-<script src="static/js/logic.js"></script>
 <script src="static/js/app.js"></script>
+<script src="static/js/logic.js"></script>
 
 </body>
 
