@@ -88,8 +88,6 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
 
     ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
 
-### Model 2: Unsupervised Model 
-IS THERE STUFF TO PUT HERE?
 
 ### Explanation of model choices: Logistic regression 
 - We choose logistic regression to predict diabetes based on socio-economical factors.  
@@ -100,7 +98,6 @@ IS THERE STUFF TO PUT HERE?
 - Benefit:  logistic regression is relatively simple to execute and understand. 
 - Limitation: the accuracies from one or multiple variables are low.  
 
-We also tried linear regression and unsupervised learning to see if they generated interesting results. 
 _________________________________________
 ## Results and Conclusion
 +++++FILL IN
