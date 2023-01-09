@@ -2,8 +2,6 @@
 ## An analysis of the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
-![Intro_Pic](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
-_________________________________________
 ## Overview
 ### Topic
 Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. 
