@@ -6,7 +6,9 @@ _________________________________________
 _________________________________________
 ## Overview
 ### Topic
-Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. 
+Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. 
+
++++++ is our topic on healthcare access though? seems like were just looking at status and if you might get diabetes. 
 
 ### Background
 _Diabetes_ is a chronic condition that affects the way the body processes blood sugar (glucose). It occurs when the body does not produce enough insulin, or when the body's cells do not properly use the insulin it has produced. Insulin is a hormone that helps regulate blood sugar levels but if not properly managed, diabetes can lead to serious health complications, including heart disease, stroke, kidney damage, blindness, and nerve damage.
@@ -22,6 +24,7 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
 
 ### Objective
 +++++FILL IN
+
 
 ### Questions to address with this study 
 - What demographic socioeconomic factors are correlated with diabetes?
@@ -41,6 +44,7 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
    - This PDF explains the meanings of the numerical values. 
 - readme.txt (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/readme.txt)
    - It is important to read this text file for running the code. 
+- The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. the data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). the variabls we are focussing on include demographics, health status, insurance and income. 
 _________________________________________
 +++++ARE WE DONE HERE?
 ## Data Cleaning and Analysis
