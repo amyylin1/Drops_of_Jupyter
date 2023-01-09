@@ -33,6 +33,8 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
 +++++EDIT/ADD MORE/REMOVE STUFF
 
 ### Description of the data sources
+The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. the data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). the variabls we are focussing on include demographics, health status, insurance and income. 
+
 - Data Source: [2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
 - adult21.csv (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult21.csv)
    - This CSV is the RAW data of everything.
@@ -42,7 +44,6 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
    - This PDF explains the meanings of the numerical values. 
 - readme.txt (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/readme.txt)
    - It is important to read this text file for running the code. 
-- The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. the data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). the variabls we are focussing on include demographics, health status, insurance and income. 
 _________________________________________
 +++++ARE WE DONE HERE?
 ## Data Cleaning and Analysis
@@ -125,4 +126,4 @@ _________________________________________
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 
 >**Resources:** <br>
->[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), (Centers for Disease Control and Prevention)[https://www.cdc.gov/], [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/)
+>[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/)
