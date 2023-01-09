@@ -1,5 +1,6 @@
 # The Access Dilemma
-## An analysis of the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
+An analysis of the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
+
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
 ## Overview
@@ -108,6 +109,16 @@ _________________________________________
 ### Things we would have done differently
 (preparation, execution)
 +++++FILL IN 
+In terms of the preparation, we noticed that the original questions we wanted to focus on were extremely specific. The medical field along with its available data, is complicated. There are many specifics that come into medicine such as: 
+- the disease which can have many different types along with severities
+- the occurrence of said disease, its type, its severity and if those who are affected by it are even being researched for the public to access
+- A lot of data that could be used is dispersed on the internet in forms of research papers, private and public studies, and private and public databases. 
+- With healthcare being a sensitive topic and patients wanting to keep their information and identity private, this also can limit was is available to the public and what is not. 
+- some of the sources also would require payments to access certain data. 
+- Another issue thats very well known in medical research is that just because a study contains data, it does not mean that the study was conducted accurately and can cause false biases in analysis. 
+There are other stipulations that can limit the accuracy and availability of information for someone trying to publicly access data but these are some common ones to demonstrate the issues we came accross. A way around this would be if we were given access to certain data either by requesting or purchasing data. 
+To save some time that we spent scavewnging for data, we could have started with a more broad question or topic to find available data and then to run through this data to come up with a more specific question based on the information we are able to obtain. 
+
 _________________________________________
 ## Dashboard
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
