@@ -1,5 +1,5 @@
-# The Longevity Dilemma
-## An analysis of the diabetic and non-diabetic population in the United States. 
+# The Access Dilemma
+## An analysis of the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
 ![Intro_Pic](https://user-images.githubusercontent.com/108758105/207190013-7b26bacb-4ddd-4c04-a8f0-0581567a4a29.png)
@@ -123,4 +123,4 @@ _________________________________________
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 
 >**Resources:** <br>
->[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/)
+>[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), (Centers for Disease Control and Prevention)[https://www.cdc.gov/], [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/)
