@@ -59,7 +59,7 @@
               </div>
             <h1 class="mb-0">Welcome</h1>
             <hr />
-            <img src=https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b9461a76289325.5c651812bdd2e.gif>
+            <!-- <img src=https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b9461a76289325.5c651812bdd2e.gif>
               
 
             <!-- Statement piece -->
@@ -71,6 +71,33 @@
             </p>
         </div>
     </header>
+
+    <!-- <div class="login">
+        <hi>Predict diabetes</h1>
+             <h3> Select the following drop down to predict diabetes</h3>
+    ​ -->
+             <!--<p>How old are you?</p>
+             <input type="radio" id="child" name="age" value="child">
+             <label for="child">17 years or younger</label><br>
+             <input type="radio" id="adult" name="age" value="adult">
+             <label for="adult">18 - 64 years</label><br>
+             <input type="radio" id="senior" name="age" value="senior">
+             <label for="senior">65 years or older</label>
+            
+    ​
+         Main Input For Receiving Query to our ML
+        <form action="{{ url_for('predict')}}"method="post">
+            <input type="text" name="Education" placeholder="Education" required="required" />
+            <input type="text" name="BMI" placeholder="BMI" required="required" />
+    ​
+            <button type="submit" class="btn"›Predict</button>
+        </form>
+    ​
+        <br>
+        <br>
+        {{ prediction_text }}
+    ​
+    </div> -->
 
     <!-- Dashboard Grid Section -->
     <section class="dashboard" id="dashboard">
@@ -94,28 +121,31 @@
                         <form action="{{ url_for('predict')}}" method="post">
 
                         <label for="prediabetes">Ever been Prediabetic?</label><br>
-                            <select id="prediabetes">
+                            <select name = "prediabetes" id="prediabetes">
+                                <!-- <option value="null"></option> -->
                                 <option value="yes">yes</option>
                                 <option value="no">no</option>
                             </select><br><br>
 
                         <label for="weightlbs">Input Weight in Lbs:</label><br>
-                            <input type="text" id="weightlbs" class="form-control-sm"><br><br>
+                            <input name="weightlbs" type="text" id="weightlbs" class="form-control-sm"><br><br>
 
                         <label for="height">Input Height in inches:</label><br>
-                            <input type="text" id="height" class="form-control-sm"><br><br>
+                            <input name="height" type="text" id="height" class="form-control-sm"><br><br>
 
                         <label for="age">Input Age:</label><br>
-                            <input type="text" id="age" class="form-control-sm"><br><br>
+                            <input name="age" type="text" id="age" class="form-control-sm"><br><br>
 
                         <label for="gender">Select Gender:</label><br>
                             <select name="gender" id="gender">
+                                <!-- <option value="null"></option> -->
                                 <option value="Female">Female</option>
                                 <option value="Male">Male</option>
                             </select><br><br>
 
                         <label for="education">Select Education:</label><br>
                             <select name="education" id="education">
+                                <!-- <option value="null"></option> -->
                                 <option value="Grade_1-11">1-11</option>
                                 <option value="12th_Grade_no_diploma">HS no Diploma</option>
                                 <option value="GED_Equivalent">GED Equivalent</option>
@@ -129,20 +159,21 @@
                             </select><br><br>
 
                         <label for="race">Select Race:</label><br>
-                            <select id="race">
+                            <select name="race" id="race">
+                                <!-- <option value="null"></option> -->
                                 <option value="White_Only">White</option>
                                 <option value="African_American_Only">African American</option>
                                 <option value="Asian_Only">Asian</option>
-                                <option value="AIAN_Only">AIAN</option>
-                                <option value="AIAN_AND_other">AIAN Mixed</option>
+                                <option value="AIAN_Only">American Indian Alaskan Native</option>
+                                <option value="AIAN_AND_other">American Indian Alaskan Native Mixed</option>
                                 <option value="Other">Other</option>
                             </select><br><br>
 
                         <label for="hhincome">Input Household Income:</label><br>
-                            <input type="text" id="hhincome" class="form-control-sm"><br><br>
+                            <input name = "income" type="text" id="hhincome" class="form-control-sm"><br><br>
 
                         <label for="hhsize">Input Household Size:</label><br>
-                            <input type="text" id="hhsize" class="form-control-sm"><br><br>
+                            <input name = "size" type="text" id="hhsize" class="form-control-sm"><br><br>
 
                         <!-- <button type="submit" id="submit-button" class="btn btn-lg" style="background-color:rgb(145, 182, 214)">Predict</button> -->
                         <input type="image" id="submit-button" src="https://www.riskdecisions.com/wp-content/uploads/2022/10/predict_risk_management_software_2022-768x317.jpg" width="250" height="80">
@@ -431,6 +462,7 @@
 <script src="static/js/dataframe.json"></script>
 <script src="static/js/app.js"></script>
 <script src="static/js/logic.js"></script>
+
 </body>
 
 </html>
