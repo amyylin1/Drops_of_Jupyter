@@ -5,7 +5,7 @@ Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dar
 _________________________________________
 ## Overview
 ### Topic
-Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. 
+Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease.  
 
 ### Background
 _Diabetes_ is a chronic condition that affects the way the body processes blood sugar (glucose). It occurs when the body does not produce enough insulin, or when the body's cells do not properly use the insulin it has produced. Insulin is a hormone that helps regulate blood sugar levels but if not properly managed, diabetes can lead to serious health complications, including heart disease, stroke, kidney damage, blindness, and nerve damage.
@@ -21,6 +21,7 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
 
 ### Objective
 +++++FILL IN
+Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. With this being said we wanted to learn why, living longer with better health outcomes. catch problems earlir. identify a way to get to the doctor earlier. people with low socioeconomic status and cant go to doctor so our analysis can give you a risk and tell you when to go. 
 
 
 ### Questions to address with this study 
