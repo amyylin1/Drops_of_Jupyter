@@ -1,5 +1,7 @@
 function saveDataToPickle() {
+
     // Create an empty list
+    
     var data = [];
   
     // Retrieve the data from the input fields
@@ -15,49 +17,19 @@ function saveDataToPickle() {
     data.push(document.querySelector('#hhsize').value);
 
     return data;
-    // Serialize the list and write it to a file using the pickle module
-    // var pickleData = pickle.dumps(data);
-    // fs.writeFileSync("data.pkl", pickleData);
   }
-
-// function saveDataToPickle() {
-//     // Create an empty list
-//     var data = [];
-  
-//     // Retrieve the data from the input fields
-
-//     // let prediabetes = document.querySelector('#prediabetes');
-//     // let preDVal = {selected: 0, notSelected: 0};
-//     // preDVal[prediabetes.value !== "" ? selected : notSelected] = 1;
-//     // data.push(preDVal);
-//     var prediabetes = document.querySelector('#prediabetes');
-//     var prediabetesSelected = prediabetes.value !== "" ? 1 : 0;
-//     var prediabetesNotSelected = prediabetes.value === "" ? 0 : 1;
-//     data.push(prediabetesSelected, prediabetesNotSelected);
-
-//     data.push(document.querySelector('#weightlbs').value);
-//     data.push(document.querySelector('#height').value);
-//     data.push(document.querySelector('#age').value);
-//     data.push(document.querySelector('#gender').value);
-//     data.push(document.querySelector('#education').value);
-//     data.push(document.querySelector('#race').value);
-//     data.push(document.querySelector('#hhincome').value);
-//     data.push(document.querySelector('#hhsize').value);
-
-//     return data;
-//     // Serialize the list and write it to a file using the pickle module
-//     // var pickleData = pickle.dumps(data);
-//     // fs.writeFileSync("data.pkl", pickleData);
-//   }
 
 function handleClick() {
     let submitButton = document.querySelector("#submit-button");
     submitButton.addEventListener('click', function(event) {
+
         // Collect form data and store it in a list
+
         event.preventDefault();
         var data = saveDataToPickle();
 
         // Define the object with predetermined keys
+
         var dataObj = {
             Prediabetes: data[0],
             Weight_Lbs: data[1],
@@ -71,10 +43,9 @@ function handleClick() {
         };
 
         // Log the object to the console
+
         console.log(dataObj);
-        // console.log(data);
     });
 };
 
-// console.log(data);
 handleClick();
