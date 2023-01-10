@@ -21,14 +21,13 @@ _Socioeconomic factors_ are social and economic conditions that can influence an
 
 ### Objective
 +++++FILL IN
-Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. With this being said we wanted to learn why, living longer with better health outcomes. catch problems earlir. identify a way to get to the doctor earlier. people with low socioeconomic status and cant go to doctor so our analysis can give you a risk and tell you when to go. 
+[The World Bank has identified a link between poverty and disease.](https://www.worldbank.org/en/topic/health/brief/poverty-health) [Diabetes Journal reported that those with lower socioeconomic status have higher diabetes mortality.](https://diabetesjournals.org/care/article/36/1/49/38282/Socioeconomic-Status-and-MortalityContribution-of) These articles indicate a relationship between low socio-economic status and barriers to quality healthcare access. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis. 
 
 
 ### Questions to address with this study 
 - What demographic socioeconomic factors are correlated with diabetes?
 - Based on these factors, who will likely get diabetes? 
 - How successfully can demographics and socioeconomic status predict diabetes?
-- Are there any other findings that can be inferred from the analysis?
 - What are changes/solutions that can be made to positively impact this issue?
 +++++EDIT/ADD MORE/REMOVE STUFF
 
@@ -64,59 +63,54 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
   - 75% White, 11% African American, 6% Asian.
   - Average Poverty Ratio is 4 (meaning income is 4 times the national poverty threshold).
   - 39% have attained at least a bachelor's degree.
-  
+#### Exploring Data with Visualizations in Tableau 
+- Fig. BMI and diabetes. 
+
+    ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
+
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
 - First, all data is imported from the database into the Google Colab Notebook that implements the Machine Learning.
-- [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we used to create our supervised and unsupervised models.
-- Handle categorical attributes with get dummies code.
+- [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we used to create our supervised models.
+- Handle categorical attributes with pandas get dummies code.
 
 #### Description of data features selection
-- Features:  variables in demographics (age, sex, race, education, poverty ratio, and region), diabetic-related health status, general health status, weight, and BMI. 
+- We used a logit function to identify which of our variables were statistically significant. We dropped variables that were insignificant to diabetes such as Region, and General Health Status. General Health Status was a self selecting variable, individuals rated their health and this was not relevant to the outcome of diabetes. 
+- Features:  variables of demographics/socioeconomic status ( sex, race, education, poverty ratio), diabetic-related health status( weight, age, and BMI). 
 - Target: Diabetes.
+- Preprocessing data was essential due to the high number of categorical variables from our data set.  
+- All variables (except for weight, age, and poverty_ratio) are categorical variables.
+- Data is pre-processed with [preprocessing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 
 #### Description of how data is split into training and test set
-- Data is split into training and testing sets by using Scikit-learn’s train_test_split function.
-- We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
-
-### Model 1: Logistic regression 
-- We chose logistic regression to measure the feature correlation probability to the target, Diabetes. 
-- All variables (except for weight, age, and poverty_ratio) are categorical variables.
-- The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no. When this classification model encounters new data, it predicts whether the individual would have diabetes.
-- Data is pre-processed with [preprocessing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 - Data is split into random training and test subsets with [the model_selection module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+- We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
+- We have a unbalanced data set (22,000 without diabetes vs 2500 with diabetes) so train and test subsets are scaled using [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.fit_transform). 
+- Samples are then over sampled using RandomOverSampler as the last step before training the model. 
+
+### Model Explanation: Logistic regression 
+- We chose logistic regression to predict diabetes based on the socio-economical factors listed above.
+- The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no. When this classification model encounters new data, it predicts whether the individual has diabetes.
+- Logistic Regression is then trained on the scaled over sampled train data, and tested for accuracy on the test data.
+- Accuracy score: 82.5%
+- Precision Score: 35.5%
+- Recall Score: 81.7%
 - Benefit: logistic regression is relatively simple to execute and understand.
-- Limitation: the accuracies from one or multiple variables are low. Based on the data visualization below, linear regression is more suitable.
-- Fig. BMI and diabetes. 
-
-    ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png)
-
-
-### Explanation of model choices: Logistic regression 
-- We choose logistic regression to predict diabetes based on socio-economical factors.  
-- All variables (except BMI, age, and income-to-poverty ratio) are categorical. 
-- The target variable only has two possible outcomes, whether a person has diabetes or not.  When this classification model encounters new data, it predicts whether the individual has diabetes.
-- Data is pre-processed with [preprocesssing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
-- Data is split into random training and test subsets with [the model_seletion module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
-- Benefit:  logistic regression is relatively simple to execute and understand. 
-- Limitation: the accuracies from one or multiple variables are low.  
-
+- Limitation: Due to so many categorical variables possible models to train and test in the future could be an Support Vector Machine model, or Random Forest Classifier. 
 _________________________________________
 ## Results and Conclusion
 +++++FILL IN
+Our machine learning model is highly accurate, and highly sensitive. It may result in fallse positive. However, since our aim is to catch diabetes earlier we believe this is a positive outcome. 
+
+We used this trained logistic model and integrated it into a flash app. In the end we have produced an app that takes in user input (weight, height, age, income, household size, education background, gender and race) transforms their data, scales it to fit our machine learning predictive model and produces the probability an individual has diabetes that users could use from the comfort of their own homes. Our model has an 82.5% accuracy score, 35.5% precision, and 81.7% recall score. 
+
+This app is a solution that helps individuals take matters into their own hands. The app can not replace visiting your primary care doctor. However, if you were are unable to see a doctor, this tool allows you to measure your probability of having diabetes. It aims to help people get diagnosed as early as possible, so people can live longer with better health outcomes. 
 
 ### Things we would have done differently
 (preparation, execution)
 +++++FILL IN 
-In terms of the preparation, we noticed that the original questions we wanted to focus on were extremely specific. The medical field along with its available data, is complicated. There are many specifics that come into medicine such as: 
-- the disease which can have many different types along with severities
-- the occurrence of said disease, its type, its severity and if those who are affected by it are even being researched for the public to access
-- A lot of data that could be used is dispersed on the internet in forms of research papers, private and public studies, and private and public databases. 
-- With healthcare being a sensitive topic and patients wanting to keep their information and identity private, this also can limit was is available to the public and what is not. 
-- some of the sources also would require payments to access certain data. 
-- Another issue thats very well known in medical research is that just because a study contains data, it does not mean that the study was conducted accurately and can cause false biases in analysis. 
-There are other stipulations that can limit the accuracy and availability of information for someone trying to publicly access data but these are some common ones to demonstrate the issues we came accross. A way around this would be if we were given access to certain data either by requesting or purchasing data. 
-To save some time that we spent scavewnging for data, we could have started with a more broad question or topic to find available data and then to run through this data to come up with a more specific question based on the information we are able to obtain. 
+ Our project was aimed at addressing access of care for low socioeconomic status individuals. So when we began the project and downloaded the NHIS data we were inititally overwhelmded by 30,000 rows and 600+ columns. We reduced our sample columns to our variables of interest. We still have over 40 columns but perhaps we shouldhave analyzed the correlations of the initial variables from our data set. In the future we would run a correlation function on the entire data set to identify variables of interest in addition to the SES variables. We do have 3 team members with medical/bio-science backgrounds and used their background knowledge to identify the health indicators most correlated with diabetes. This is why we kept variables such BMI, Weight, and Age. 
+
 
 _________________________________________
 ## Dashboard
