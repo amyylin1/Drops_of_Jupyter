@@ -1,13 +1,11 @@
 # The Access Dilemma
-An analysis of the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
+An analysis on the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
 ## Overview
 ### Topic
 Our topic is on diabetes in the United States and the correlation of socioeconomic factors to this disease. Studies have shown a relationship between low socio-economic status and barriers to quality healthcare access. 
-
-+++++ is our topic on healthcare access though? seems like were just looking at status and if you might get diabetes. 
 
 ### Background
 _Diabetes_ is a chronic condition that affects the way the body processes blood sugar (glucose). It occurs when the body does not produce enough insulin, or when the body's cells do not properly use the insulin it has produced. Insulin is a hormone that helps regulate blood sugar levels but if not properly managed, diabetes can lead to serious health complications, including heart disease, stroke, kidney damage, blindness, and nerve damage.
