@@ -20,16 +20,15 @@ Some Statistics:
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
 ### Objective
+The objective of our analysis is 
 +++++FILL IN
-[The World Bank has identified a link between poverty and disease.](https://www.worldbank.org/en/topic/health/brief/poverty-health) [Diabetes Journal reported that those with lower socioeconomic status have higher diabetes mortality.](https://diabetesjournals.org/care/article/36/1/49/38282/Socioeconomic-Status-and-MortalityContribution-of) These articles indicate a relationship between low socio-economic status and barriers to quality healthcare access. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis. 
-
+ These articles indicate a relationship between low socio-economic status and barriers to quality healthcare access. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis. 
 
 ### Questions to address with this study 
-- What demographic socioeconomic factors are correlated with diabetes?
-- Based on these factors, who will likely get diabetes? 
-- How successfully can demographics and socioeconomic status predict diabetes?
+- What demographics and socioeconomic factors are correlated with diabetes?
+   - Based on these factors, who will likely get diabetes? 
+   - How successfully can demographics and socioeconomic status predict diabetes?
 - What are changes/solutions that can be made to positively impact this issue?
-+++++EDIT/ADD MORE/REMOVE STUFF
 
 ### Description of the data sources
 The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. the data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). the variabls we are focussing on include demographics, health status, insurance and income. 
@@ -63,6 +62,7 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
   - 75% White, 11% African American, 6% Asian.
   - Average Poverty Ratio is 4 (meaning income is 4 times the national poverty threshold).
   - 39% have attained at least a bachelor's degree.
+
 #### Exploring Data with Visualizations in Tableau 
 - Fig. BMI and diabetes. 
 
@@ -130,4 +130,4 @@ _________________________________________
 >VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 
 >**Resources:** <br>
->[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/)
+>[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/), [The World Bank - link between poverty and disease](https://www.worldbank.org/en/topic/health/brief/poverty-health), [Diabetes Journal - lower socioeconomic status have higher diabetes mortality.](https://diabetesjournals.org/care/article/36/1/49/38282/Socioeconomic-Status-and-MortalityContribution-of)
