@@ -71,8 +71,20 @@ Our dashboard website integrates our Data, Prediction app, and Tableau in one lo
 To run the dashboard website, the user must navigate to the dashboard folder of this repository in terminal. Once in the folder, activating the machine learning environment (mlenv) is crucial. With the mlenv active and our terminal in the proper folder, the code `python app.py` is ran and the http link generated can be opened in a browser. 
 
 ### Exploring Data with Visualizations in Tableau
-- Fig. BMI and diabetes. This image visualizes 
+These visualizations demonstrate the variables against the total sample size of individuals with and without diabetes.
+
+- Fig. BMI and diabetes. This bar chart shows the correlation between BMI and Diabetes. It is a linear relationship, so as the BMI increases, the incidence of diabetes increases. 
 ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
+
+- Fig. Race and diabetes. This bar chart shows the correlation between race and diabetes. Here we can assume that certain racial groups have higher incidences  of diabetes which are hispanics, black/african american, and american indian/alaskan native. 
+
+
+- Fig. Education and diabetes. This bar chart shows the correlation between education and diabetes. We can see that the higher the education, the lower the incidences of diabetes. 
+
+
+- Fig. Poverty ratio and diabetes. This bar chart shows the correlation between poverty ratio and diabetes. The higher the poverty ratio (the more wealthy you are) is, the lower the incidence of diabetes is. 
+
+
 
 
 _________________________________________
@@ -80,41 +92,42 @@ _________________________________________
 #### Description of preliminary data processing with Machine Learning
 - First, all data is imported from the database into the Google Colab Notebook that implements the Machine Learning.
 - [scikit-Learn](https://scikit-learn.org/stable/) is the machine learning data analysis library we used to create our supervised models.
-- Handle categorical attributes with pandas get dummies code.
+- We converted categorical attributes with pandas `get dummies` code.
 
 #### Description of data features selection
-- We used a logit function to identify which of our variables were statistically significant. We dropped variables that were insignificant to diabetes such as Region, and General Health Status. General Health Status was a self selecting variable, individuals rated their health and this was not relevant to the outcome of diabetes. 
-- Features:  variables of demographics/socioeconomic status ( sex, race, education, poverty ratio), diabetic-related health status( weight, age, and BMI). 
+- We used a logit function to identify which of our variables were statistically significant. We dropped variables that were insignificant to diabetes such as Region, and General Health Status. General Health Status was a self-selecting variable, individuals rated their health, and this was not relevant to the outcome of diabetes. 
+- Features:  variables of demographics/socioeconomic status (sex, race, education, poverty ratio), diabetic-related health status (weight, age, and BMI). 
 - Target: Diabetes.
 - Preprocessing data was essential due to the high number of categorical variables from our data set.  
 - All variables (except for weight, age, and poverty_ratio) are categorical variables.
 - Data is pre-processed with [preprocessing module](https://scikit-learn.org/stable/modules/preprocessing.html.).
 
-#### Description of how data is split into training and test set
-- Data is split into random training and test subsets with [the model_selection module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+#### Description of how data is split into the training and testing sets
+- Data is split into random training and testing subsets with [the model_selection module](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
 - We end up with four sets:  X is split into X_train and X_test sets, and y is split into y_train and y_test sets. 
-- We have a unbalanced data set (22,000 without diabetes vs 2500 with diabetes) so train and test subsets are scaled using [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.fit_transform). 
-- Samples are then over sampled using RandomOverSampler as the last step before training the model. 
+- We have an unbalanced data set (22,000 without diabetes vs 2500 with diabetes) so training and testing subsets are scaled using [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.fit_transform). 
+- Samples are then oversampled using RandomOverSampler as the last step before training the model. 
 
 ### Model Explanation: Logistic regression 
-- We chose logistic regression to predict diabetes based on the socio-economical factors listed above.
-- The target variable only has two possible values, whether a person has been diagnosed with diabetes before or no. When this classification model encounters new data, it predicts whether the individual has diabetes.
-- Logistic Regression is then trained on the scaled over sampled train data, and tested for accuracy on the test data.
+- We chose logistic regression to predict diabetes based on the socioeconomical factors listed above.
+- The target variable only has two possible values, whether a person has been diagnosed with diabetes before or not. When this classification model encounters new data, it predicts whether the individual has diabetes.
+- Logistic Regression is then trained on the scaled oversampled training data and tested for accuracy on the testing data.
 - Accuracy score: 82.5%
 - Precision Score: 35.5%
 - Recall Score: 81.7%
 - Benefit: logistic regression is relatively simple to execute and understand.
-- Limitation: Due to so many categorical variables possible models to train and test in the future could be an Support Vector Machine model, or Random Forest Classifier. 
+- Limitation: Due to so many categorical variables possible models to train and test in the future could be a Support Vector Machine model, or Random Forest Classifier. 
 _________________________________________
 ## Results and Conclusion
-Our machine learning model is highly accurate, and highly sensitive. It may result in fallse positive. However, since our aim is to catch diabetes earlier we believe this is a positive outcome. 
+Our machine learning model is highly accurate, and highly sensitive, so it may result in a false positive. However, since our aim is to catch diabetes earlier, we believe this is a positive outcome. 
 
-We used this trained logistic model and integrated it into a flash app. In the end we have produced an app that takes in user input (weight, height, age, income, household size, education background, gender and race) transforms their data, scales it to fit our machine learning predictive model and produces the probability an individual has diabetes that users could use from the comfort of their own homes. Our model has an 82.5% accuracy score, 35.5% precision, and 81.7% recall score. 
+We used this trained logistic model and integrated it into a flash app. In the end we have produced an app that takes in user input (weight, height, age, income, household size, education background, gender, and race) transforms their data, scales it to fit our machine learning predictive model and produces the probability that an individual has diabetes. This allows users to measure the probability of diabetes from the comfort of their own homes. Our model has an 82.5% accuracy score, 35.5% precision, and 81.7% recall score. 
 
-This app is a solution that helps individuals take matters into their own hands. The app can not replace visiting your primary care doctor. However, if you were are unable to see a doctor, this tool allows you to measure your probability of having diabetes. It aims to help people get diagnosed as early as possible, so people can live longer with better health outcomes. 
+This app is a solution that helps individuals take matters into their own hands. The app cannot replace visiting your primary care doctor. However, if you we are unable to see a doctor, this tool allows you to measure your probability of having diabetes. It aims to help people get diagnosed as early as possible, so people can live longer with better health outcomes. 
 
 ### Things we would have done differently
- Our project was aimed at addressing access of care for low socioeconomic status individuals. So when we began the project and downloaded the NHIS data we were inititally overwhelmded by 30,000 rows and 600+ columns. We reduced our sample columns to our variables of interest. We still have over 40 columns but perhaps we shouldhave analyzed the correlations of the initial variables from our data set. In the future we would run a correlation function on the entire data set to identify variables of interest in addition to the SES variables. We do have 3 team members with medical/bio-science backgrounds and used their background knowledge to identify the health indicators most correlated with diabetes. This is why we kept variables such BMI, Weight, and Age. 
+Our project was aimed at addressing access of care for low socioeconomic status individuals. So, when we began the project and downloaded the NHIS data we were initially overwhelmed by 30,000 rows and 600+ columns. We reduced our sample columns to our variables of interest. We still have over 40 columns but perhaps we should have analyzed the correlations of the initial variables from our data set. In the future we would run a correlation function on the entire data set to identify variables of interest in addition to the SES variables. We do have three team members with medical/bio-science backgrounds and used their background knowledge to identify the health indicators most correlated with diabetes. Therefore, we kept variables such BMI, Weight, and Age. 
+++++ need to expand the last points we made.
 _________________________________________
 ## Tools, Languages and Resources
 
