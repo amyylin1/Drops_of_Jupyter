@@ -65,14 +65,16 @@ _________________________________________
 ## Dashboard
 The following link connects to our [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes) which houses our exploration of the data and tells the story we learned from it. We have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on a local server while we are in development of our flask app.
 
-### How to navigate through dashboard website 
+### How to navigate through the dashboard website 
 ![Dashboard](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/17bd6c2227b9fb99b1b23f48c49b2dfbeec67dd7/images/dashboard.png)
-Our html dashboard integrates our Data, Prediction app, and Tableau in one location. Along the top we have a navigation bar that can take you through the different elements of the dashboard. The home button will show the user the top portion of the page which has our basic information. The predict button will bring the user to second area of the page which allows a user to input their information to then predict a score of their chances of having diabetes. when the user presses the predict button after filling in the required fields, it will redirect them to a new page with the results. The dashbaord button will take users to the Tableau website which has our storyboard highlighting the visualizations we created through the data. Finally the data button will bring users to th end of the page which has a filterable table that __________.
+Our dashboard website integrates our Data, Prediction app, and Tableau in one location. Along the top we have a navigation bar that can take you through the different elements of the dashboard. The home button will show the user the top portion of the page which has our basic information. The predict button will bring the user to second area of the page which allows the user to input their information to then predict a score of their chances of having diabetes. When the user presses the predict button after filling in the required fields, it will redirect them to a new page with the results. The dashboard button will take users to the Tableau website which has our storyboard highlighting the visualizations we created through the data. Finally, the data button will bring users to the end of the page which has a filterable table that allows users to navigate through the sample data. 
+To run the dashboard website, the user must navigate to the dashboard folder of this repository in terminal. Once in the folder, activating the machine learning environment (mlenv) is crucial. With the mlenv active and our terminal in the proper folder, the code `python app.py` is ran and the http link generated can be opened in a browser. 
 
 ### Exploring Data with Visualizations in Tableau
-- Fig. BMI and diabetes. 
+- Fig. BMI and diabetes. This image visualizes 
+![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
 
-    ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
+
 _________________________________________
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
