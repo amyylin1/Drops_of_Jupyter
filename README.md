@@ -88,7 +88,33 @@ These visualizations demonstrate the variables against the total sample size of 
 - Fig. Poverty ratio and diabetes. This bar chart shows the correlation between poverty ratio and diabetes. The higher the poverty ratio (the more wealthy you are) is, the lower the incidence of diabetes is. 
 
 ![tableau_pov_rat.png](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/main/images/tableau_pov_rat.png)
-_________________________________________
+
+- Fig. Example of our json dataset in VSCode.
+
+![dataset_example](https://user-images.githubusercontent.com/108758105/211934080-6ad9cf15-77f2-4ac0-b4d0-a351f5adf410.png)
+
+- Fig. Snippet of json data extrator using d3.select
+
+![dataframe_extractor](https://user-images.githubusercontent.com/108758105/211934383-8a29215f-c2f1-49c4-8d5f-e41d332dcb97.png)
+
+- Fig. saveDataToPickle function using javascript.  Eventually we moved to a Flask app, but this code successfully pulls the data and creates a list to push to a pickle file.
+
+![predictor_function](https://user-images.githubusercontent.com/108758105/211934725-e12d6fa8-5ba3-4d47-aeba-cc8990da9eaf.png)
+
+- Fig. HTML example of our header.
+
+![html_example_header](https://user-images.githubusercontent.com/108758105/211934814-fcd8d65b-053b-4563-808b-81aab340a523.png)
+
+- Fig. HTML snippet of our Tableau Dashboard code embedded from Tableau website.
+
+![tableau_html](https://user-images.githubusercontent.com/108758105/211934975-b9475a05-3a16-40ba-8957-1e0ef7c94518.png)
+
+- Fig. HTML code of our Predictor interactive chart.
+
+![html_predictor_example](https://user-images.githubusercontent.com/108758105/211935133-ad4c536f-4e4d-43f2-810e-f1db92efa394.png)
+
+
+_________________________
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
 - First, all data is imported from the database into the Google Colab Notebook that implements the Machine Learning.
