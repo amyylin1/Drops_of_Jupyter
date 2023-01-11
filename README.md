@@ -71,18 +71,19 @@ Our dashboard website integrates our Data, Prediction app, and Tableau in one lo
 To run the dashboard website, the user must navigate to the dashboard folder of this repository in terminal. Once in the folder, activating the machine learning environment (mlenv) is crucial. With the mlenv active and our terminal in the proper folder, the code `python app.py` is ran and the http link generated can be opened in a browser. 
 
 ### Exploring Data with Visualizations in Tableau
-These visualizations demonstrate the variables against the total sample size of individuals with and without diabetes.
+These visualizations demonstrate the variables against the total sample size of individuals with (brown) and without (blue) diabetes.
 
 - Fig. BMI and diabetes. This bar chart shows the correlation between BMI and Diabetes. It is a linear relationship, so as the BMI increases, the incidence of diabetes increases. 
 ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
 
 - Fig. Race and diabetes. This bar chart shows the correlation between race and diabetes. Here we can assume that certain racial groups have higher incidences  of diabetes which are hispanics, black/african american, and american indian/alaskan native. 
-
+![tableau_ed.png]
 
 - Fig. Education and diabetes. This bar chart shows the correlation between education and diabetes. We can see that the higher the education, the lower the incidences of diabetes. 
-
+![tableau_ed.png](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/main/images/tableau_ed.png)
 
 - Fig. Poverty ratio and diabetes. This bar chart shows the correlation between poverty ratio and diabetes. The higher the poverty ratio (the more wealthy you are) is, the lower the incidence of diabetes is. 
+![tableau_pov_rat.png](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/main/images/tableau_pov_rat.png)
 
 
 
