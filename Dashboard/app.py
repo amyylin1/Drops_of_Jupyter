@@ -39,6 +39,7 @@ col_names = ['Weight_Lbs',
 app = Flask(__name__)
 
 # load ml model
+std_scaler = pickle.load(open('scaler.pkl','rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
 # define the app route for the default page of the web-app
@@ -107,10 +108,13 @@ def predict():
     df_XX[ 'Poverty_Ratio' ] = ratio
     
     print( df_XX )
-    int_features = [float(x) for x in df_XX.iloc[0]]
-    print(int_features)
-    final_features = [np.array(int_features)]
-    prediction = model.predict_proba( final_features )
+    #Loading model to compare the results
+    scaled_input = std_scaler.transform(df_XX)
+    print(scaled_input)
+    #int_features = [float(x) for x in df_XX.iloc[0]]
+    #print(int_features)
+    #final_features = [np.array(int_features)]
+    prediction = model.predict_proba( scaled_input )
     print("prediction",prediction)
     
     output = np.round(prediction[0][1], 2)
