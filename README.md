@@ -43,7 +43,6 @@ The NHIS tracks the health status and health care access of Americans and has be
 - readme.txt (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/readme.txt)
    - It is important to read this text file for running the code. 
 _________________________________________
-+++++ARE WE DONE HERE?
 ## Data Cleaning and Analysis
 The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
 
@@ -62,12 +61,19 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
   - 75% White, 11% African American, 6% Asian.
   - Average Poverty Ratio is 4 (meaning income is 4 times the national poverty threshold).
   - 39% have attained at least a bachelor's degree.
+_________________________________________
+## Dashboard
+[Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
+In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on a local server while we are in development of our flask app.
 
-#### Exploring Data with Visualizations in Tableau 
+### How to navigate through the dashboard
++++++FILL IN
+
+### Exploring Data with Visualizations in Tableau 
 - Fig. BMI and diabetes. 
 
     ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
-
+_________________________________________
 ### Machine Learning
 #### Description of preliminary data processing with Machine Learning
 - First, all data is imported from the database into the Google Colab Notebook that implements the Machine Learning.
@@ -99,7 +105,6 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
 - Limitation: Due to so many categorical variables possible models to train and test in the future could be an Support Vector Machine model, or Random Forest Classifier. 
 _________________________________________
 ## Results and Conclusion
-+++++FILL IN
 Our machine learning model is highly accurate, and highly sensitive. It may result in fallse positive. However, since our aim is to catch diabetes earlier we believe this is a positive outcome. 
 
 We used this trained logistic model and integrated it into a flash app. In the end we have produced an app that takes in user input (weight, height, age, income, household size, education background, gender and race) transforms their data, scales it to fit our machine learning predictive model and produces the probability an individual has diabetes that users could use from the comfort of their own homes. Our model has an 82.5% accuracy score, 35.5% precision, and 81.7% recall score. 
@@ -107,19 +112,7 @@ We used this trained logistic model and integrated it into a flash app. In the e
 This app is a solution that helps individuals take matters into their own hands. The app can not replace visiting your primary care doctor. However, if you were are unable to see a doctor, this tool allows you to measure your probability of having diabetes. It aims to help people get diagnosed as early as possible, so people can live longer with better health outcomes. 
 
 ### Things we would have done differently
-(preparation, execution)
-+++++FILL IN 
  Our project was aimed at addressing access of care for low socioeconomic status individuals. So when we began the project and downloaded the NHIS data we were inititally overwhelmded by 30,000 rows and 600+ columns. We reduced our sample columns to our variables of interest. We still have over 40 columns but perhaps we shouldhave analyzed the correlations of the initial variables from our data set. In the future we would run a correlation function on the entire data set to identify variables of interest in addition to the SES variables. We do have 3 team members with medical/bio-science backgrounds and used their background knowledge to identify the health indicators most correlated with diabetes. This is why we kept variables such BMI, Weight, and Age. 
-
-
-_________________________________________
-## Dashboard
-[Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
-In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on ___ (Gitpages).
-+++++EDIT THIS?
-
-### How to navigate through the dashboard
-+++++FILL IN
 _________________________________________
 ## Tools, Languages and Resources
 
