@@ -138,7 +138,7 @@ _________________________________________
 >Python, JavaScript, PostgreSQL <br> 
 
 >**Software:** <br>
->VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
+> Flask, VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
 
 >**Resources:** <br>
 >[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/), [The World Bank - link between poverty and disease](https://www.worldbank.org/en/topic/health/brief/poverty-health), [Diabetes Journal - lower socioeconomic status have higher diabetes mortality.](https://diabetesjournals.org/care/article/36/1/49/38282/Socioeconomic-Status-and-MortalityContribution-of)
