@@ -63,11 +63,13 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
   - 39% have attained at least a bachelor's degree.
 _________________________________________
 ## Dashboard
+ The following link connects to our tableau which houses our exploration of the data and tells the story we learned from it. 
 [Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
 In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on a local server while we are in development of our flask app.
-
 ### How to navigate through the dashboard
 +++++FILL IN
+![Dashboard](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/17bd6c2227b9fb99b1b23f48c49b2dfbeec67dd7/images/dashboard.png)
+Our html dashboard integrates our Data, Prediction app, and Tableau in one location. Along the top we have a navigation bar that can take you through the different elements of the dashboard. 
 
 ### Exploring Data with Visualizations in Tableau 
 - Fig. BMI and diabetes. 
