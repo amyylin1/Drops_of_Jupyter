@@ -35,8 +35,10 @@ col_names = ['Weight_Lbs',
             'Race_White_Only']
 
 
-# initialzie the flask app
+# initialize the flask app
 app = Flask(__name__)
+#identify the static folder to read css 
+#app.static_folder = 'static'
 
 # load ml model
 std_scaler = pickle.load(open('scaler.pkl','rb'))
