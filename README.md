@@ -108,7 +108,7 @@ _________________________________________
 - We have an unbalanced data set (22,000 without diabetes vs 2500 with diabetes) so training and testing subsets are scaled using [Standard Scaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.fit_transform). 
 - Samples are then oversampled using RandomOverSampler as the last step before training the model. 
 
-### Model Explanation: Logistic regression 
+#### Model Explanation: Logistic regression 
 - We chose logistic regression to predict diabetes based on the socioeconomical factors listed above.
 - The target variable only has two possible values, whether a person has been diagnosed with diabetes before or not. When this classification model encounters new data, it predicts whether the individual has diabetes.
 - Logistic Regression is then trained on the scaled oversampled training data and tested for accuracy on the testing data.
