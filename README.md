@@ -20,9 +20,9 @@ Some Statistics:
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
 ### Objective
-The objective of our analysis is 
-+++++FILL IN
- These articles indicate a relationship between low socio-economic status and barriers to quality healthcare access. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis. 
+The objective of this analysis is to understand the relationship between Social economic status and diabetes.  The article mentioned from “The World Bank” has identified a link between poverty and disease. The other article mentioned “Diabetes Journal” reported that those with lower socioeconomic status have higher diabetes mortality. These articles indicate a relationship between low socioeconomic status and barriers to quality healthcare access. The number one way for people with lower socioeconomic status to achieve better results is to catch their diabetes early. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis.
+
+We chose this topic because of our common knowledge and interest in the disease with our previous experience and medical history. Diabetes is very common and there is a high probability that everyone in this room knows at least one person affected by it. This also means that we would be able to access vast amounts of data related to the topic. Knowing that communities of lower socioeconomic status are more heavily impacted, we wanted to learn why? 
 
 ### Questions to address with this study 
 - What demographics and socioeconomic factors are correlated with diabetes?
