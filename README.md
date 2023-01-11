@@ -127,6 +127,9 @@ This app is a solution that helps individuals take matters into their own hands.
 
 ### Things we would have done differently
 Our project was aimed at addressing access of care for low socioeconomic status individuals. So, when we began the project and downloaded the NHIS data we were initially overwhelmed by 30,000 rows and 600+ columns. We reduced our sample columns to our variables of interest. We still have over 40 columns but perhaps we should have analyzed the correlations of the initial variables from our data set. In the future we would run a correlation function on the entire data set to identify variables of interest in addition to the SES variables. We do have three team members with medical/bio-science backgrounds and used their background knowledge to identify the health indicators most correlated with diabetes. Therefore, we kept variables such BMI, Weight, and Age. 
+There is a difficulty with accessing health data because of privacy issues and lack of volunteers.  Some information is kept private because of the individual’s preference for privacy. Other information is inaccessible because of databases that are owned by private institutions or require payment for access. In terms of lack of volunteers, there are many Americans who do not want to participate in these studies which leaves out a lot of data that can be used. If we had access to the private data or had the chance to get more Americans to participate in these surveys, we could have created a more robust model with even more intimate data.
+
+
 ++++ need to expand the last points we made.
 _________________________________________
 ## Tools, Languages and Resources
