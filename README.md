@@ -1,5 +1,5 @@
 # The Access Dilemma
-An analysis on the diabetic and non-diabetic population in the United States regarding Socio-economic status. 
+An analysis on the diabetic and non-diabetic population in the United States regarding socioeconomic status. 
 
 Drops of Jupyter group - [Amy Ying Lin](https://github.com/amyylin1), [Elina Dart](https://github.com/DartElina), [Manny Linares](https://github.com/MRLinares), [Kevin Daniliuk](https://github.com/DaniliukK95).
 _________________________________________
@@ -20,7 +20,7 @@ Some Statistics:
 _Socioeconomic factors_ are social and economic conditions that can influence an individual's or group's health, well-being, and access to resources and opportunities. These factors can include things like income, education, occupation, housing, and access to healthcare and social services.
 
 ### Objective
-The objective of this analysis is to understand the relationship between Social economic status and diabetes.  The article mentioned from “The World Bank” has identified a link between poverty and disease. The other article mentioned “Diabetes Journal” reported that those with lower socioeconomic status have higher diabetes mortality. These articles indicate a relationship between low socioeconomic status and barriers to quality healthcare access. The number one way for people with lower socioeconomic status to achieve better results is to catch their diabetes early. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis.
+The objective of this analysis is to understand the relationship between socioeconomic status and diabetes.  The article mentioned from “The World Bank” has identified a link between poverty and disease. The other article mentioned “Diabetes Journal” reported that those with lower socioeconomic status have higher diabetes mortality. These articles indicate a relationship between low socioeconomic status and barriers to quality healthcare access. The number one way for people with lower socioeconomic status to achieve better results is to catch their diabetes early. Individuals may not see the value in regular physicals, or struggle to afford them. The result is a late diagnosis.
 
 We chose this topic because of our common knowledge and interest in the disease with our previous experience and medical history. Diabetes is very common and there is a high probability that everyone in this room knows at least one person affected by it. This also means that we would be able to access vast amounts of data related to the topic. Knowing that communities of lower socioeconomic status are more heavily impacted, we wanted to learn why? 
 
@@ -31,7 +31,7 @@ We chose this topic because of our common knowledge and interest in the disease 
 - What are changes/solutions that can be made to positively impact this issue?
 
 ### Description of the data sources
-The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. the data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). the variabls we are focussing on include demographics, health status, insurance and income. 
+The NHIS tracks the health status and health care access of Americans and has been doing so since 1957. Using this data which tackles national health objectives, they work to identify and bring more information to significant health problems. The data size we extracted from the NHIS contains about 30,000 rows (individuals) and 622 columns (variables). The variables we are focusing on include demographics, health status, insurance, and income. 
 
 - Data Source: [2021 National Health Interview Survey (NHIS) from the Centers for Disease Control and Prevention (CDC)](https://www.cdc.gov/nchs/nhis/2021nhis.htm)
 - adult21.csv (https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/Kevin_D_Week4/1_Raw_data/adult21.csv)
@@ -47,7 +47,7 @@ _________________________________________
 The team used Jupyter Notebook, Python, Pandas and Numpy to extract, transform the data and load to SQL database. In this process we explored the data with the support of the data Summary and Codebook to translate the coded categorical data. Then using Tableau we visualized the data in a series of pie charts and graphs. Further analysis was completed using Machine Learning and Logistic Regression. 
 
 ### Database Storage
-PGAdmin is the tool we used for our database. We imported, cleaned, and transformed CSVs using Pandas and integrated the data into our other analysis tools. PgAdmin4 was also be used to perform analysis. The images below include first: the ERD, which illustrates the structure of Database. Then, the second image is presented to depict a join query that joins our tables so a user can compare socioeconomic demographics alongside an individual's health status. 
+PGAdmin is the tool we used for our database. We imported, cleaned, and transformed CSVs using Pandas and integrated the data into our other analysis tools. PgAdmin4 was also used to perform analysis. The images below include first: the ERD, which illustrates the structure of th database. Then, the second image is presented to depict a join query that joins our tables so a user can compare socioeconomic demographics alongside an individual's health status. 
 
 ![ERD](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/e1182de36d7d52bbcd8f819ee655abede02891bf/images/ERD_12_21_22.png)
 
@@ -63,15 +63,13 @@ PGAdmin is the tool we used for our database. We imported, cleaned, and transfor
   - 39% have attained at least a bachelor's degree.
 _________________________________________
 ## Dashboard
- The following link connects to our tableau which houses our exploration of the data and tells the story we learned from it. 
-[Exploratory analysis](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story1?publish=yes)
-In addition to using [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes), we have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on a local server while we are in development of our flask app.
-### How to navigate through the dashboard
-+++++FILL IN
-![Dashboard](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/17bd6c2227b9fb99b1b23f48c49b2dfbeec67dd7/images/dashboard.png)
-Our html dashboard integrates our Data, Prediction app, and Tableau in one location. Along the top we have a navigation bar that can take you through the different elements of the dashboard. 
+The following link connects to our [Tableau](https://public.tableau.com/app/profile/amy8818/viz/finalproject_16711568635250/Story2?publish=yes) which houses our exploration of the data and tells the story we learned from it. We have also integrated D3.js for a fully functioning and interactive dashboard website. It is hosted on a local server while we are in development of our flask app.
 
-### Exploring Data with Visualizations in Tableau 
+### How to navigate through dashboard website 
+![Dashboard](https://github.com/DaniliukK95/Drops_Of_Jupyter/blob/17bd6c2227b9fb99b1b23f48c49b2dfbeec67dd7/images/dashboard.png)
+Our html dashboard integrates our Data, Prediction app, and Tableau in one location. Along the top we have a navigation bar that can take you through the different elements of the dashboard. The home button will show the user the top portion of the page which has our basic information. The predict button will bring the user to second area of the page which allows a user to input their information to then predict a score of their chances of having diabetes. when the user presses the predict button after filling in the required fields, it will redirect them to a new page with the results. The dashbaord button will take users to the Tableau website which has our storyboard highlighting the visualizations we created through the data. Finally the data button will bring users to th end of the page which has a filterable table that __________.
+
+### Exploring Data with Visualizations in Tableau
 - Fig. BMI and diabetes. 
 
     ![Screen Shot 2022-12-23 at 8 35 59 AM](https://user-images.githubusercontent.com/108419097/209344805-3d15a517-42ab-423e-92f1-af975aeb4369.png) 
