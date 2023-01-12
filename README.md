@@ -164,10 +164,12 @@ _________________________________________
 >Python, JavaScript, PostgreSQL <br> 
 
 >**Software:** <br>
-> Flask, VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS<br>
+> Flask, VS Code, JupyterNotebook, Pandas, Numpy, Scikit-Learn, pgAdmin4, GoogleCollab, TableauPublic, Github, Bootstrap, HTML, CSS, QBD (for ERD image generation)<br>
 
 >**Resources:** <br>
 >[2021 National Health Interview Survey (NHIS)](https://www.cdc.gov/nchs/nhis/index.htm), [Centers for Disease Control and Prevention](https://www.cdc.gov/), [Google](https://www.google.com/), [Stack Overflow](https://stackoverflow.com/), [Columbia Engineering BCS](https://courses.bootcampspot.com/), [The World Bank - link between poverty and disease](https://www.worldbank.org/en/topic/health/brief/poverty-health), [Diabetes Journal - lower socioeconomic status have higher diabetes mortality](https://diabetesjournals.org/care/article/36/1/49/38282/Socioeconomic-Status-and-MortalityContribution-of), [population rate of diabetes](https://ourworldindata.org/grapher/diabetes-prevalence)
 
 >**Google Slide Presentation:** <br> 
 >[Link to Slide Presentation](https://docs.google.com/presentation/d/1frQCFUMLjLESFChDFPRKfrWDBDM_eeRc/edit?usp=sharing&ouid=114235229897805055862&rtpof=true&sd=true)
+>[Link to presentation Script](https://docs.google.com/document/d/1FlnguPvooM4zVVRG-qw5w-PT04YKLdCi99K6-zTubSg/edit?usp=sharing)
+
